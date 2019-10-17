@@ -1,0 +1,20 @@
+<h1>All Magazines</h1>
+
+<% @magazines.each_with_index do |magazine, index| %>
+
+<%= "Magazine #{index+1} : " %>
+<%= link_to "#{magazine.name}", magazine_path(magazine) %>  
+||| Operations -->		
+<%= link_to 'Edit', edit_magazine_path(magazine) %>
+<%= link_to 'DELETE', magazine_path(magazine), method: :delete, data: { confirm: "Are You sure to Delete \"#{magazine.name}\""} %> 
+
+<br><br> 
+
+<% end %>
+
+<br>
+<%= link_to "Create New Magazine", new_magazine_path %>
+<br><br>
+<%= link_to "Subscribers", subscribers_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>

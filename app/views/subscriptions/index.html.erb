@@ -1,0 +1,19 @@
+<% @subscribers.each do |subscriber| %>
+	<%= link_to subscriber.name, subscriber_path(subscriber)  %>
+	<br>
+	<% subscriber.magazines.each_with_index do |magazine, index| %>
+		&emsp;<%= "Magazine #{index+1} : #{magazine.name}" %><br>
+	<% end %>
+	<br>
+<% end %>
+
+<br>
+<br>
+<br>
+<br>
+
+<%= link_to "Subscribers", subscribers_path  %>
+<br><br>
+<%= link_to "Magazines", magazines_path  %>
+<br><br><br>
+<%= link_to 'Back to Home', root_path %>

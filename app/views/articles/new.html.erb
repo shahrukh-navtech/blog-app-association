@@ -1,0 +1,56 @@
+<div align="center">
+
+<h1>New Post to the Blog</h1>
+
+<%= form_with scope: :articles, url: articles_path, local: true do |form| %>
+
+<table>
+	<tr>
+		<th align="left"><%= form.label :title %><br></th>
+		<td><%= form.text_field :title %></td>
+	</tr>
+
+
+<!--
+	<tr>
+		<th align="left"><%= form.label :author %></th>
+		<td><%= form.text_field :author %></td>
+	</tr>
+--->
+
+	<tr>
+		<th align="left"><%= form.label :author %></th>
+		<td>
+			<%= form.collection_select :author, @authors.all, :id, :first_name %>
+		</td>
+	</tr>
+
+	<tr>
+		<th align="left"><%= form.label :body %></th>
+		<td><%= form.text_area :body %></td>
+	</tr>
+
+	<tr>
+		<th align="left"><%= form.label :url %></th>
+		<td><%= form.text_field :url %></td>
+	</tr>
+
+
+
+
+
+</table> 
+<%= form.submit :Submit %>
+<% end %>
+
+<br>
+<%= link_to 'Show all Articles', articles_path %>
+<br><br>
+<% if @article.errors.full_messages.any? %>
+  <% @article.errors.full_messages.each do |error_message| %>
+    <%= error_message if @article.errors.full_messages.first == error_message %> <br />
+  <% end %>
+<% end %>
+<%= link_to 'Back to Home', root_path %>
+
+</div>

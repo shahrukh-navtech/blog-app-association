@@ -1,0 +1,17 @@
+
+
+<h1>Product View</h1>
+
+<h3>Product: <%= label_tag 'product', @product.name %></h3>
+<%= "Category : #{@product.categories.first.name}" %><br>
+
+<br>
+<%= link_to 'Edit', edit_product_path(@product) %>&emsp;<%= link_to 'DELETE', product_path(@product), method: :delete, data: { confirm: "Are You sure to Delete \"#{@product.name}\""} %> 
+
+
+
+
+<br><br><br><br>
+<%= link_to 'Show all Products', products_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>

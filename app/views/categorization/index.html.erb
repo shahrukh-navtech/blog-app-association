@@ -1,0 +1,19 @@
+<% @categories.each do |category| %>
+	<%= link_to category.name, category_path(category)  %>
+	<br>
+	<% category.products.each_with_index do |product, index| %>
+		&emsp;<%= "Product #{index+1} : #{product.name}" %><br>
+	<% end %>
+	<br>
+<% end %>
+
+<br>
+<br>
+<br>
+<br>
+
+<%= link_to "Categories", categories_path  %>
+<br><br>
+<%= link_to "Products", products_path  %>
+<br><br><br>
+<%= link_to 'Back to Home', root_path %>

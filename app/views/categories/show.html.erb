@@ -1,0 +1,18 @@
+
+
+<h1>Category View</h1>
+
+<h3>Category: <%= label_tag 'category', @category.name %></h3>
+
+<h3>Products</h3>
+<% @category.products.each_with_index do |product, index| %>
+
+	<%= "Product #{index+1} : #{product.name}" %><br>
+
+
+<br>
+<% end %>
+<%= link_to 'Edit', edit_category_path(@category) %>
+&emsp;
+<%= link_to 'DELETE', category_path(@category), method: :delete, data: { confirm: "Are You sure to Delete \"#{@category.name}\""} %> 
+

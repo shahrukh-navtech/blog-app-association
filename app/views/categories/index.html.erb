@@ -1,0 +1,15 @@
+<h1>All Categories</h1>
+
+<% @categories.each_with_index do |category, index| %>
+
+	<%= link_to "Category #{index+1} : #{category.name}", category_path(category) %><br><br>
+
+
+<% end %>
+
+<br>
+<%= link_to "Create New Category", new_category_path %>
+<br><br>
+<%= link_to "Back to Categorization", categorization_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>

@@ -1,0 +1,20 @@
+<h1>All Subscribers</h1>
+
+<% @subscibers.each_with_index do |subscriber, index| %>
+
+<%= "Subscriber #{index+1} : " %>
+<%= link_to "#{subscriber.name}", subscriber_path(subscriber) %>  
+||| Operations -->		
+<%= link_to 'Edit', edit_subscriber_path(subscriber) %>
+<%= link_to 'DELETE', subscriber_path(subscriber), method: :delete, data: { confirm: "Are You sure to Delete \"#{subscriber.name}\""} %> 
+
+<br><br> 
+
+<% end %>
+
+<br>
+<%= link_to "Create New Subsciber", new_subscriber_path %>
+<br><br>
+<%= link_to "Magazines", magazines_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>

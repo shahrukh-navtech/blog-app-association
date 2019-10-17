@@ -1,0 +1,25 @@
+<h1>New Subscriber</h1>
+
+<%= form_with scope: :subscribers, url: subscribers_path, local: true do |form| %>
+
+<b><%= form.label :name %></b><br></th>
+<%= form.text_field :name %>
+<br><br>
+<b>Magazines</b>
+ <ul>
+  <% @magazines.each do |magazine| %>
+      <li>
+        <%= check_box_tag 'magazine_ids[]', magazine.id -%>
+        <%= magazine.name -%>
+      </li>
+  <% end %>
+</ul>
+<br>
+<%= form.submit :Submit %>
+<% end %>
+
+<br>
+<%= link_to 'Show all Subscribers', subscribers_path %>
+<br><br>
+
+<%= link_to 'Back to Home', root_path %>

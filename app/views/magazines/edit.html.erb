@@ -1,0 +1,15 @@
+<h1>EDIT Magazine</h1>
+
+<%= form_with model: @magazine, local: true do |form| %>
+
+<%= form.label :name %><br></th>
+<%= form.text_field :name %>
+
+
+<%= form.submit :Submit %>
+<% end %>
+
+<br>
+<%= link_to 'Show all Magazine', magazines_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>

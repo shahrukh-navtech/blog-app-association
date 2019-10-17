@@ -1,0 +1,33 @@
+<div align="center">
+
+<h1>Add New Author</h1>
+
+<%= form_with scope: :authors, url: authors_path, local: true do |form| %>
+
+<table>
+	<tr>
+		<th align="left"><%= form.label "First Name" %><br></th>
+		<td><%= form.text_field :first_name %></td>
+	</tr>
+
+	<tr>
+		<th align="left"><%= form.label "Last Name" %></th>
+		<td><%= form.text_field :last_name %></td>
+	</tr>
+
+	<tr>
+		<th align="left"><%= form.label :phone %></th>
+		<td><%= form.text_area :phone %></td>
+	</tr>
+
+
+</table> 
+<%= form.submit :Submit %>
+
+<% end %>
+
+<br>
+<%= link_to 'Show all Authors', authors_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>
+</div>

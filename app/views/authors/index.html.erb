@@ -1,0 +1,42 @@
+
+
+<div align="center">
+
+<h1>All Authors</h1>
+<table border="2px">
+
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Phone</th>
+		<th></th>
+	</tr>
+
+
+	<% @authors.each do |author| %>
+
+	<tr>
+
+		<td><%= author.first_name %></td>
+		<td><%= author.last_name %></td>
+		<td><%= author.phone %></td>
+		<td>
+			<%= link_to 'Show', author_path(author) %>			
+
+			<%= link_to 'Edit', edit_author_path(author) %>
+				
+			<%= link_to 'DELETE', author_path(author), method: :delete, data: { confirm: "Are You sure to Delete \"#{author.first_name}\""} %> 
+			
+		</td>
+	</tr>
+
+	<% end %>
+</table>
+
+
+<br>
+<%= link_to "Add New Author", new_author_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>
+
+</div>

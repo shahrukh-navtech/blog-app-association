@@ -1,0 +1,21 @@
+<h1>New Product</h1>
+
+<%= form_with scope: :products, url: products_path, local: true do |form| %>
+
+<%= form.label :name %><br></th>
+<%= form.text_field :name %>
+
+
+<%= form.collection_select :category, @categories.all, :id, :name %>
+
+
+<%= form.submit :Submit %>
+<% end %>
+
+<br>
+<%= link_to 'Show all Products', products_path %>
+<br><br>
+
+<%= link_to 'Back to Home', root_path %>
+
+</div>

@@ -1,0 +1,23 @@
+<h1>Welcome to the Blog Application Made in Ruby on Rails</h1>
+
+<h2><%= link_to "Categories (has and belongs to many Relation)", categorization_path %></h2>
+
+<h2><%= link_to "Subscribers (has many : through)", subscribers_path %></h2>
+
+
+<div align="center">
+	<%= image_tag("blog") %>
+<br>
+<%= link_to "Create New Blog Article", new_article_path %>
+
+<br><br>
+
+<%= link_to "List all the Articles", articles_path %>
+
+<br><br>
+
+<%= link_to "List all the Authors", authors_path %>
+
+</div>
+
+
