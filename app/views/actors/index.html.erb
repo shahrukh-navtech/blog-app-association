@@ -1,0 +1,18 @@
+<h2>Actors List</h2>
+
+<table width="75%" align="left" border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>No. </th>
+    <th>Name</th>
+    <th>Descriptions</th>
+    <th>Actions</th>
+  </tr>
+  <% @actors.each_with_index do |actor, index| %>
+  <tr>
+    <td><%= index+1 %>.</td>
+    <td><%= actor.name %></td>
+    <td><%= actor.description %></td>
+    <td><%= link_to "Show", actor_path(actor)%> <%= "Edit Destroy" %></td>
+  </tr>
+  <% end %>
+</table>

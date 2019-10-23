@@ -1,0 +1,2 @@
+module Actors::CommentsHelper
+end

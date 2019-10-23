@@ -14,6 +14,14 @@ Rails.application.routes.draw do
 
   resources :magazines
 
+  resources :movies do
+    resources :comments, module: :movies
+  end
+
+  resources :actors do
+    resources :comments, module: :actors
+  end
+
   get '/categorization', to: 'categorization#index'
 
   get '/categorization/:id', to: 'categorization#show'

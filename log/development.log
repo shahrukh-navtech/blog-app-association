@@ -27034,3 +27034,2067 @@ Processing by SubscribersController#index as HTML
 Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 2.5ms | Allocations: 13781)
 
 
+Started GET "/" for ::1 at 2019-10-23 15:34:09 +0530
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1584.3ms | Allocations: 1352589)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/public/packs
+[Webpacker] (node:4589) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+
+Completed 200 OK in 24229ms (Views: 24190.6ms | ActiveRecord: 0.0ms | Allocations: 1369310)
+
+
+Started GET "/subscribers" for ::1 at 2019-10-23 15:35:14 +0530
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (37.5ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 66.9ms | Allocations: 4292)
+Completed 200 OK in 126ms (Views: 48.6ms | ActiveRecord: 39.6ms | Allocations: 19449)
+
+
+Started GET "/subscribers/1" for ::1 at 2019-10-23 15:35:23 +0530
+Processing by SubscribersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubscriber Load (0.6ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers` WHERE `subscribers`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/subscribers_controller.rb:49:in `show'
+  Rendering subscribers/show.html.erb within layouts/application
+  [1m[36mMagazine Load (0.4ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines` INNER JOIN `subscriptions` ON `magazines`.`id` = `subscriptions`.`magazine_id` WHERE `subscriptions`.`subscriber_id` = 1[0m
+  ↳ app/views/subscribers/show.html.erb:6:in `each_with_index'
+  Rendered subscribers/show.html.erb within layouts/application (Duration: 139.2ms | Allocations: 14315)
+Completed 200 OK in 212ms (Views: 117.2ms | ActiveRecord: 67.8ms | Allocations: 28157)
+
+
+Started GET "/subscribers" for ::1 at 2019-10-23 16:34:59 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/magazines" for ::1 at 2019-10-23 16:34:59 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (30.2ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 47.1ms | Allocations: 4444)
+Completed 200 OK in 19524ms (Views: 19478.4ms | ActiveRecord: 33.2ms | Allocations: 1351367)
+
+
+Processing by MagazinesController#index as HTML
+  Rendering magazines/index.html.erb within layouts/application
+  [1m[36mMagazine Load (0.6ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines`[0m
+  ↳ app/views/magazines/index.html.erb:3:in `each_with_index'
+  Rendered magazines/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4090)
+Completed 200 OK in 72ms (Views: 28.3ms | ActiveRecord: 1.7ms | Allocations: 18506)
+
+
+Started GET "/subscribers" for ::1 at 2019-10-23 16:35:28 +0530
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (0.8ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3594)
+Completed 200 OK in 53ms (Views: 32.4ms | ActiveRecord: 2.4ms | Allocations: 17389)
+
+
+Started GET "/subscribers" for ::1 at 2019-10-23 16:36:16 +0530
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 4424)
+Completed 200 OK in 1430ms (Views: 1403.5ms | ActiveRecord: 1.9ms | Allocations: 1351298)
+
+
+Started GET "/subscribers/1" for ::1 at 2019-10-23 16:36:36 +0530
+Processing by SubscribersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubscriber Load (1.0ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers` WHERE `subscribers`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/subscribers_controller.rb:49:in `show'
+  Rendering subscribers/show.html.erb within layouts/application
+  [1m[36mMagazine Load (0.3ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines` INNER JOIN `subscriptions` ON `magazines`.`id` = `subscriptions`.`magazine_id` WHERE `subscriptions`.`subscriber_id` = 1[0m
+  ↳ app/views/subscribers/show.html.erb:6:in `each_with_index'
+  Rendered subscribers/show.html.erb within layouts/application (Duration: 61.4ms | Allocations: 10530)
+Completed 200 OK in 170ms (Views: 110.7ms | ActiveRecord: 34.8ms | Allocations: 24035)
+
+
+Started GET "/subscribers/1/magazines" for ::1 at 2019-10-23 16:36:41 +0530
+Processing by MagazinesController#index as HTML
+  Parameters: {"subscriber_id"=>"1"}
+  Rendering magazines/index.html.erb within layouts/application
+  [1m[36mMagazine Load (0.4ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines`[0m
+  ↳ app/views/magazines/index.html.erb:3:in `each_with_index'
+  Rendered magazines/index.html.erb within layouts/application (Duration: 33.1ms | Allocations: 1638)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.4ms | Allocations: 14687)
+
+
+Started GET "/subscribers/1/magazines/2" for ::1 at 2019-10-23 16:36:52 +0530
+Processing by MagazinesController#show as HTML
+  Parameters: {"subscriber_id"=>"1", "id"=>"2"}
+  [1m[36mMagazine Load (0.7ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines` WHERE `magazines`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/magazines_controller.rb:37:in `show'
+Completed 404 Not Found in 26ms (ActiveRecord: 0.7ms | Allocations: 1250)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Magazine with 'id'=2):
+  
+app/controllers/magazines_controller.rb:37:in `show'
+Started GET "/subscribers/1/magazines/1" for ::1 at 2019-10-23 16:36:57 +0530
+Processing by MagazinesController#show as HTML
+  Parameters: {"subscriber_id"=>"1", "id"=>"1"}
+  [1m[36mMagazine Load (0.7ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines` WHERE `magazines`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/magazines_controller.rb:37:in `show'
+  Rendering magazines/show.html.erb within layouts/application
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers` INNER JOIN `subscriptions` ON `subscribers`.`id` = `subscriptions`.`subscriber_id` WHERE `subscriptions`.`magazine_id` = 1[0m
+  ↳ app/views/magazines/show.html.erb:6:in `each_with_index'
+  Rendered magazines/show.html.erb within layouts/application (Duration: 42.4ms | Allocations: 2710)
+Completed 200 OK in 136ms (Views: 130.8ms | ActiveRecord: 1.2ms | Allocations: 15745)
+
+
+Started GET "/magazines" for ::1 at 2019-10-23 16:37:01 +0530
+Processing by MagazinesController#index as HTML
+  Rendering magazines/index.html.erb within layouts/application
+  [1m[36mMagazine Load (0.4ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines`[0m
+  ↳ app/views/magazines/index.html.erb:3:in `each_with_index'
+  Rendered magazines/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1364)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.4ms | Allocations: 13837)
+
+
+Started GET "/" for ::1 at 2019-10-23 16:37:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 958)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 13853)
+
+
+Started GET "/subscribers" for ::1 at 2019-10-23 16:37:03 +0530
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (5.0ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1252)
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 5.0ms | Allocations: 13711)
+
+
+Started GET "/magazines" for ::1 at 2019-10-23 16:55:25 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/magazines"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subscribers" for ::1 at 2019-10-23 16:55:28 +0530
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 376.3ms | Allocations: 155510)
+Completed 500 Internal Server Error in 380ms (ActiveRecord: 0.4ms | Allocations: 157437)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `magazines_path' for #<#<Class:0x00007fbed7851428>:0x00007fbed785b090>):
+    15: <br>
+    16: <%= link_to "Create New Subsciber", new_subscriber_path %>
+    17: <br><br>
+    18: <%= link_to "Magazines", magazines_path %>
+    19: <br><br>
+    20: <%= link_to 'Back to Home', root_path %>
+  
+app/views/subscribers/index.html.erb:18
+Started GET "/" for ::1 at 2019-10-23 16:55:30 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 21.7ms | Allocations: 2419)
+Completed 200 OK in 353ms (Views: 351.7ms | ActiveRecord: 0.0ms | Allocations: 49785)
+
+
+Started GET "/subscribers" for ::1 at 2019-10-23 16:55:31 +0530
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (16.1ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 419.8ms | Allocations: 153011)
+Completed 500 Internal Server Error in 422ms (ActiveRecord: 16.1ms | Allocations: 153459)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `magazines_path' for #<#<Class:0x00007fbed7851428>:0x00007fbed0f42590>):
+    15: <br>
+    16: <%= link_to "Create New Subsciber", new_subscriber_path %>
+    17: <br><br>
+    18: <%= link_to "Magazines", magazines_path %>
+    19: <br><br>
+    20: <%= link_to 'Back to Home', root_path %>
+  
+app/views/subscribers/index.html.erb:18
+Started GET "/subscribers" for ::1 at 2019-10-23 16:55:33 +0530
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 333.2ms | Allocations: 152970)
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.4ms | Allocations: 153418)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `magazines_path' for #<#<Class:0x00007fbed7851428>:0x00007fbed6b62938>):
+    15: <br>
+    16: <%= link_to "Create New Subsciber", new_subscriber_path %>
+    17: <br><br>
+    18: <%= link_to "Magazines", magazines_path %>
+    19: <br><br>
+    20: <%= link_to 'Back to Home', root_path %>
+  
+app/views/subscribers/index.html.erb:18
+Started GET "/subscribers" for ::1 at 2019-10-23 16:55:58 +0530
+Processing by SubscribersController#index as HTML
+  Rendering subscribers/index.html.erb within layouts/application
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers`[0m
+  ↳ app/views/subscribers/index.html.erb:3:in `each_with_index'
+  Rendered subscribers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1472)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.5ms | Allocations: 14870)
+
+
+Started GET "/subscribers/4" for ::1 at 2019-10-23 16:56:01 +0530
+Processing by SubscribersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers` WHERE `subscribers`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/subscribers_controller.rb:49:in `show'
+  Rendering subscribers/show.html.erb within layouts/application
+  [1m[36mMagazine Load (0.6ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines` INNER JOIN `subscriptions` ON `magazines`.`id` = `subscriptions`.`magazine_id` WHERE `subscriptions`.`subscriber_id` = 4[0m
+  ↳ app/views/subscribers/show.html.erb:6:in `each_with_index'
+  Rendered subscribers/show.html.erb within layouts/application (Duration: 51.8ms | Allocations: 9948)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 1.0ms | Allocations: 23114)
+
+
+Started GET "/subscribers/4/magazines" for ::1 at 2019-10-23 16:56:08 +0530
+Processing by MagazinesController#index as HTML
+  Parameters: {"subscriber_id"=>"4"}
+  Rendering magazines/index.html.erb within layouts/application
+  [1m[36mMagazine Load (0.4ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines`[0m
+  ↳ app/views/magazines/index.html.erb:3:in `each_with_index'
+  Rendered magazines/index.html.erb within layouts/application (Duration: 211.2ms | Allocations: 81512)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.4ms | Allocations: 82549)
+
+
+  
+ActionView::Template::Error (undefined method `magazine_path' for #<#<Class:0x00007fbed6e30660>:0x00007fbed6e3a340>):
+    3: <% @magazines.each_with_index do |magazine, index| %>
+    4: 
+    5: <%= "Magazine #{index+1} : " %>
+    6: <%= link_to "#{magazine.name}", magazine_path(magazine) %>  
+    7: ||| Operations -->		
+    8: <%= link_to 'Edit', edit_magazine_path(magazine) %>
+    9: <%= link_to 'DELETE', magazine_path(magazine), method: :delete, data: { confirm: "Are You sure to Delete \"#{magazine.name}\""} %> 
+  
+app/views/magazines/index.html.erb:6
+app/views/magazines/index.html.erb:3:in `each_with_index'
+app/views/magazines/index.html.erb:3
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (38.4ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateActors (20191023113943)
+  [1m[35m (333.0ms)[0m  [1m[35mCREATE TABLE `actors` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191023113943')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMovies (20191023114023)
+  [1m[35m (133.7ms)[0m  [1m[35mCREATE TABLE `movies` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` varchar(255), `comment` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191023114023')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20191023114407)
+  [1m[35m (104.7ms)[0m  [1m[35mCREATE TABLE `comments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `commentable_type` varchar(255), `commentable_id` int, `body` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191023114407')[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO `movies` (`name`, `description`, `comment`, `created_at`, `updated_at`) VALUES ('Inception', 'Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife\'s murder and his only chance at redemption is to perform the impossible, an inception.', 'Good', '2019-10-23 11:51:05.901607', '2019-10-23 11:51:05.901607')[0m
+  [1m[35m (79.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie' LIMIT 11[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('892336952976185220', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to RemoveCommentFromMovie (20191023115307)
+  [1m[35m (588.4ms)[0m  [1m[35mALTER TABLE `movies` DROP COLUMN `Comment`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191023115307')[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveCommentFromActor (20191023115346)
+  [1m[35m (193.2ms)[0m  [1m[35mALTER TABLE `actors` DROP COLUMN `Comment`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191023115346')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('892336952976185220')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie' LIMIT 11[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO `comments` (`commentable_type`, `commentable_id`, `body`, `created_at`, `updated_at`) VALUES ('Movie', 1, 'Good', '2019-10-23 11:56:20.619808', '2019-10-23 11:56:20.619808')[0m
+  [1m[35m (83.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie' LIMIT 11[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO `comments` (`commentable_type`, `commentable_id`, `body`, `created_at`, `updated_at`) VALUES ('Movie', 1, 'Best', '2019-10-23 11:56:34.740315', '2019-10-23 11:56:34.740315')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` ORDER BY `movies`.`id` ASC LIMIT 1[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie' LIMIT 11[0m
+Started GET "/subscribers/4/magazines" for ::1 at 2019-10-23 17:32:37 +0530
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/subscribers/4/magazines"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/subscribers/4/" for ::1 at 2019-10-23 17:32:42 +0530
+Processing by SubscribersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT `subscribers`.* FROM `subscribers` WHERE `subscribers`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/subscribers_controller.rb:49:in `show'
+  Rendering subscribers/show.html.erb within layouts/application
+  [1m[36mMagazine Load (0.5ms)[0m  [1m[34mSELECT `magazines`.* FROM `magazines` INNER JOIN `subscriptions` ON `magazines`.`id` = `subscriptions`.`magazine_id` WHERE `subscriptions`.`subscriber_id` = 4[0m
+  ↳ app/views/subscribers/show.html.erb:6:in `each_with_index'
+  Rendered subscribers/show.html.erb within layouts/application (Duration: 96.5ms | Allocations: 7777)
+Completed 200 OK in 1234ms (Views: 1206.8ms | ActiveRecord: 1.0ms | Allocations: 36894)
+
+
+Started GET "/movies" for ::1 at 2019-10-23 17:32:50 +0530
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/controllers/movies_controller.rb:4:in `index'
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 78)
+Completed 200 OK in 13884ms (Views: 103.1ms | ActiveRecord: 3.6ms | Allocations: 173289)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:35:33 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 116)
+Completed 200 OK in 8056ms (Views: 701.8ms | ActiveRecord: 0.0ms | Allocations: 22499)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2019-10-23 17:35:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:36:54 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 113)
+Completed 200 OK in 241ms (Views: 189.1ms | ActiveRecord: 0.0ms | Allocations: 16926)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:39:35 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 37.7ms | Allocations: 4080)
+Completed 200 OK in 433ms (Views: 401.0ms | ActiveRecord: 30.8ms | Allocations: 20115)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:40:25 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2096)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms | Allocations: 3298)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbed6bd9c40>::Destroy):
+    10:   <tr>
+    11:     <td><%= movie.name %></td>
+    12:     <td><%= movie.description %></td>
+    13:     <td><%= Show Edit Destroy %></td>
+    14:   </tr>
+    15:   <% end %>>
+    16: </table>
+  
+app/views/movies/index.html.erb:13
+app/views/movies/index.html.erb:9:in `each_with_index'
+app/views/movies/index.html.erb:9
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:40:39 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 816)
+Completed 200 OK in 255ms (Views: 253.2ms | ActiveRecord: 0.4ms | Allocations: 16864)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:40:50 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 811)
+Completed 200 OK in 120ms (Views: 118.4ms | ActiveRecord: 0.3ms | Allocations: 16853)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:41:44 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 811)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.3ms | Allocations: 16853)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:41:48 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 811)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.4ms | Allocations: 16851)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:42:19 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 811)
+Completed 200 OK in 699ms (Views: 697.8ms | ActiveRecord: 0.4ms | Allocations: 16852)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:42:50 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 812)
+Completed 200 OK in 121ms (Views: 119.9ms | ActiveRecord: 0.3ms | Allocations: 16852)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:43:02 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 811)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.4ms | Allocations: 16856)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:43:21 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 811)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.5ms | Allocations: 16856)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 17:43:33 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 816)
+Completed 200 OK in 108ms (Views: 106.3ms | ActiveRecord: 0.5ms | Allocations: 16859)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:14:18 +0530
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (2.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 810)
+Completed 200 OK in 401ms (Views: 392.2ms | ActiveRecord: 2.3ms | Allocations: 16853)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:15:05 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (1.6ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 811)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 1.6ms | Allocations: 16849)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:15:35 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 811)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.4ms | Allocations: 16854)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:15:47 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 811)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.5ms | Allocations: 16851)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:15:53 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 811)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.4ms | Allocations: 16851)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:15:54 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 629)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.3ms | Allocations: 15733)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:17:56 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:9:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 816)
+Completed 200 OK in 388ms (Views: 386.7ms | ActiveRecord: 0.5ms | Allocations: 16868)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:19:19 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 830)
+Completed 200 OK in 554ms (Views: 553.0ms | ActiveRecord: 0.3ms | Allocations: 16872)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:19:25 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 827)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.3ms | Allocations: 16863)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:19:39 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 828)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.3ms | Allocations: 16865)
+
+
+Started GET "/movies" for ::1 at 2019-10-23 18:20:03 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 631)
+Completed 200 OK in 1131ms (Views: 1129.3ms | ActiveRecord: 0.4ms | Allocations: 15727)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-10-23 18:20:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies" for ::1 at 2019-10-23 18:20:23 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 826)
+Completed 200 OK in 433ms (Views: 431.1ms | ActiveRecord: 0.5ms | Allocations: 16864)
+
+
+Started GET "/movies" for ::1 at 2019-10-23 18:20:30 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 828)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.3ms | Allocations: 16856)
+
+
+Started GET "/movies" for ::1 at 2019-10-23 18:20:34 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 827)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.3ms | Allocations: 16860)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:24:56 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (1.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 828)
+Completed 200 OK in 329ms (Views: 321.2ms | ActiveRecord: 1.4ms | Allocations: 16875)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:25:06 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 828)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.3ms | Allocations: 16863)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:25:07 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 631)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.4ms | Allocations: 15730)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:25:14 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 828)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.4ms | Allocations: 16872)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:26:29 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 833)
+Completed 200 OK in 612ms (Views: 611.1ms | ActiveRecord: 0.4ms | Allocations: 16886)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:27:10 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 631)
+Completed 200 OK in 313ms (Views: 311.7ms | ActiveRecord: 0.3ms | Allocations: 15732)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:27:20 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 828)
+Completed 200 OK in 233ms (Views: 231.5ms | ActiveRecord: 0.3ms | Allocations: 16867)
+
+
+Started GET "/movies" for 127.0.0.1 at 2019-10-23 18:27:34 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 828)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.4ms | Allocations: 16868)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2019-10-23 18:28:02 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for MoviesController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1" for ::1 at 2019-10-23 18:29:33 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 0.0ms | Allocations: 98363)
+
+
+  
+NameError (undefined local variable or method `param' for #<MoviesController:0x00007fbed6b41cd8>
+Did you mean?  params
+               params=):
+  
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/1" for ::1 at 2019-10-23 18:29:42 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+Completed 200 OK in 13972ms (Views: 183.4ms | ActiveRecord: 169.7ms | Allocations: 44685)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:30:47 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+Completed 200 OK in 501ms (Views: 348.3ms | ActiveRecord: 78.4ms | Allocations: 20571)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:31:31 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+Completed 200 OK in 299ms (Views: 295.0ms | ActiveRecord: 0.4ms | Allocations: 16694)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:31:42 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 115)
+Completed 200 OK in 175ms (Views: 171.3ms | ActiveRecord: 0.5ms | Allocations: 16687)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:31:59 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 126)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.4ms | Allocations: 16704)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:33:15 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1059)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.3ms | Allocations: 2799)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Movie Name: <%= @movie.name %></h2>
+
+<h2>Description:</h2> <%= @movie.description %>
+
+
+<% @movie.comments.each_with_index { |comment, index | comment } %>
+
+<%= comment %>
+
+
+<% end %>
+):
+1:    <h2>Movie Name: <%= @movie.name %></h2>
+2:    
+3:    <h2>Description:</h2> <%= @movie.description %>
+4:    
+5:    
+6:    <% @movie.comments.each_with_index { |comment, index | comment } %>
+7:    
+8:    <%= comment %>
+9:    
+10:    
+11:    <% end %>
+  
+app/views/movies/show.html.erb:13: syntax error, unexpected end, expecting end-of-input
+app/views/movies/show.html.erb:13: syntax error, unexpected end, expecting end-of-input
+app/views/movies/show.html.erb:13: syntax error, unexpected end, expecting end-of-input
+app/views/movies/show.html.erb:13: syntax error, unexpected end, expecting end-of-input
+app/views/movies/show.html.erb:13: syntax error, unexpected end, expecting end-of-input
+app/views/movies/show.html.erb:13: syntax error, unexpected end, expecting end-of-input
+Started GET "/movies/1" for ::1 at 2019-10-23 18:34:22 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:6:in `each_with_index'
+  Rendered movies/show.html.erb within layouts/application (Duration: 47.0ms | Allocations: 7839)
+Completed 200 OK in 434ms (Views: 429.7ms | ActiveRecord: 1.7ms | Allocations: 24325)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:34:31 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:6:in `each_with_index'
+  Rendered movies/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 973)
+Completed 200 OK in 188ms (Views: 185.0ms | ActiveRecord: 0.7ms | Allocations: 17548)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:34:39 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:6:in `each_with_index'
+  Rendered movies/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 971)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.9ms | Allocations: 17540)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:34:47 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:6:in `each_with_index'
+  Rendered movies/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 973)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.7ms | Allocations: 17545)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:36:12 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (1.1ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered movies/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 965)
+Completed 200 OK in 389ms (Views: 378.3ms | ActiveRecord: 1.7ms | Allocations: 17549)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:43:02 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered movies/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 998)
+Completed 200 OK in 544ms (Views: 537.9ms | ActiveRecord: 1.4ms | Allocations: 17571)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 18:43:14 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered movies/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 996)
+Completed 200 OK in 41ms (Views: 35.5ms | ActiveRecord: 1.1ms | Allocations: 17570)
+
+
+Started GET "/movies/1/comments" for ::1 at 2019-10-23 18:50:33 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (uninitialized constant CommentsController
+Did you mean?  ActionController):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1/comment" for ::1 at 2019-10-23 18:50:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/movies/1/comment"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1/comments" for ::1 at 2019-10-23 18:51:30 +0530
+  
+ActionController::RoutingError (uninitialized constant Movies):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1/comments" for ::1 at 2019-10-23 18:51:48 +0530
+  
+ActionController::RoutingError (uninitialized constant Movies):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1/comment" for ::1 at 2019-10-23 18:51:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/movies/1/comment"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1/comments" for ::1 at 2019-10-23 18:51:54 +0530
+  
+ActionController::RoutingError (uninitialized constant Movies):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1/comments" for ::1 at 2019-10-23 18:52:01 +0530
+  
+ActionController::RoutingError (uninitialized constant Movies):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1" for ::1 at 2019-10-23 19:03:57 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 369.9ms | Allocations: 2344)
+  Rendered movies/show.html.erb within layouts/application (Duration: 409.3ms | Allocations: 8286)
+Completed 200 OK in 1343ms (Views: 1225.6ms | ActiveRecord: 35.9ms | Allocations: 40956)
+
+
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:04:08 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GuRac7RWqAOfzWAGtVzObZqOQ7iAQmZxms23oP8jDiyg8WERjpTIF4ANklcgSQxCTQnAWOYUUUvO7EKZxBCNrA==", "comment"=>{"body"=>"test"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1005)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:3:in `create'
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:04:52 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GuRac7RWqAOfzWAGtVzObZqOQ7iAQmZxms23oP8jDiyg8WERjpTIF4ANklcgSQxCTQnAWOYUUUvO7EKZxBCNrA==", "comment"=>{"body"=>"test"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+Completed 500 Internal Server Error in 97621ms (ActiveRecord: 0.0ms | Allocations: 18434)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:06:34 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GuRac7RWqAOfzWAGtVzObZqOQ7iAQmZxms23oP8jDiyg8WERjpTIF4ANklcgSQxCTQnAWOYUUUvO7EKZxBCNrA==", "comment"=>{"body"=>"test"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 999)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:07:09 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GuRac7RWqAOfzWAGtVzObZqOQ7iAQmZxms23oP8jDiyg8WERjpTIF4ANklcgSQxCTQnAWOYUUUvO7EKZxBCNrA==", "comment"=>{"body"=>"test"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 999)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:09:43 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GuRac7RWqAOfzWAGtVzObZqOQ7iAQmZxms23oP8jDiyg8WERjpTIF4ANklcgSQxCTQnAWOYUUUvO7EKZxBCNrA==", "comment"=>{"body"=>"test"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.0ms | Allocations: 50358)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<Movies::CommentsController:0x00007fbed59c00e0>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:11:28 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GuRac7RWqAOfzWAGtVzObZqOQ7iAQmZxms23oP8jDiyg8WERjpTIF4ANklcgSQxCTQnAWOYUUUvO7EKZxBCNrA==", "comment"=>{"body"=>"test"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.0ms | Allocations: 50366)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<Movies::CommentsController:0x00007fbed5ba06f8>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:11:42 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GuRac7RWqAOfzWAGtVzObZqOQ7iAQmZxms23oP8jDiyg8WERjpTIF4ANklcgSQxCTQnAWOYUUUvO7EKZxBCNrA==", "comment"=>{"body"=>"test"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies/comments_controller.rb:6:in `set_commentable'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO `comments` (`commentable_type`, `commentable_id`, `body`, `created_at`, `updated_at`) VALUES ('Movie', 1, 'test', '2019-10-23 13:42:12.877647', '2019-10-23 13:42:12.877647')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (77.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 29858ms (ActiveRecord: 169.3ms | Allocations: 24014)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 19:12:13 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 1.1ms | Allocations: 454)
+  Rendered movies/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1568)
+Completed 200 OK in 288ms (Views: 286.2ms | ActiveRecord: 0.7ms | Allocations: 20260)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 19:12:39 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 1.2ms | Allocations: 504)
+  Rendered movies/show.html.erb within layouts/application (Duration: 13.5ms | Allocations: 6063)
+Completed 200 OK in 71ms (Views: 44.1ms | ActiveRecord: 3.1ms | Allocations: 28540)
+
+
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:12:41 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"q4kADdRxtxDGaVGOMtanWLkdleKEypNP0YZCJo8ZRSgRnDtv7rPXBNmpo9+nw2V3bpoWAuKcpHWFp7cftCrGqA==", "comment"=>{"body"=>"adf"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1008)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:4:in `create'
+Started GET "/movies/1/comments" for ::1 at 2019-10-23 19:14:58 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Movies::CommentsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/movies/1" for ::1 at 2019-10-23 19:15:02 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 4.9ms | Allocations: 649)
+  Rendered movies/show.html.erb within layouts/application (Duration: 67.2ms | Allocations: 6551)
+Completed 200 OK in 689ms (Views: 489.6ms | ActiveRecord: 91.1ms | Allocations: 29842)
+
+
+Started POST "/movies/1/comments" for ::1 at 2019-10-23 19:15:10 +0530
+Processing by Movies::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"gZAdoXdvIn2vBvqdAimIgcE3Ls29QIIuEfqIpxkGOPc7hSbDTa1CabDGCMyXPEquFrCtLdsWtRRF232eIjW7dw==", "comment"=>{"body"=>"comment3"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies/comments_controller.rb:6:in `set_commentable'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO `comments` (`commentable_type`, `commentable_id`, `body`, `created_at`, `updated_at`) VALUES ('Movie', 1, 'comment3', '2019-10-23 13:45:10.788237', '2019-10-23 13:45:10.788237')[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (157.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 164ms (ActiveRecord: 158.4ms | Allocations: 3404)
+
+
+Started GET "/movies/1" for ::1 at 2019-10-23 19:15:11 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT `movies`.* FROM `movies` WHERE `movies`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/movies_controller.rb:8:in `show'
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Movie'[0m
+  ↳ app/views/movies/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 0.9ms | Allocations: 401)
+  Rendered movies/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1335)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.6ms | Allocations: 19800)
+
+
+Started GET "/movies/" for ::1 at 2019-10-23 19:15:17 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (1.2ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 827)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 1.2ms | Allocations: 18889)
+
+
+Started GET "/actors/" for ::1 at 2019-10-23 19:15:22 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ActorsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActor Create (0.4ms)[0m  [1m[32mINSERT INTO `actors` (`name`, `description`, `created_at`, `updated_at`) VALUES ('Leonardo DiCaprio', 'DescriptionLeonardo Wilhelm DiCaprio is an American actor, producer, and environmentalist. He is known for starring in biopics and period films, and for playing unconventional roles.', '2019-10-23 13:49:57.331358', '2019-10-23 13:49:57.331358')[0m
+  [1m[35m (68.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/actors/" for ::1 at 2019-10-23 19:20:06 +0530
+Processing by ActorsController#index as HTML
+  Rendering actors/index.html.erb within layouts/application
+  [1m[36mActor Load (0.5ms)[0m  [1m[34mSELECT `actors`.* FROM `actors`[0m
+  ↳ app/views/actors/index.html.erb:10:in `each_with_index'
+  Rendered actors/index.html.erb within layouts/application (Duration: 53.0ms | Allocations: 3866)
+Completed 200 OK in 420ms (Views: 352.8ms | ActiveRecord: 34.4ms | Allocations: 23529)
+
+
+Started GET "/actors/" for ::1 at 2019-10-23 19:22:29 +0530
+Processing by ActorsController#index as HTML
+  Rendering actors/index.html.erb within layouts/application
+  [1m[36mActor Load (0.3ms)[0m  [1m[34mSELECT `actors`.* FROM `actors`[0m
+  ↳ app/views/actors/index.html.erb:10:in `each_with_index'
+  Rendered actors/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 899)
+Completed 200 OK in 454ms (Views: 452.2ms | ActiveRecord: 0.3ms | Allocations: 19767)
+
+
+Started GET "/actors/1" for ::1 at 2019-10-23 19:22:31 +0530
+Processing by ActorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mActor Load (3.2ms)[0m  [1m[34mSELECT `actors`.* FROM `actors` WHERE `actors`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/actors_controller.rb:8:in `show'
+  Rendering actors/show.html.erb within layouts/application
+  Rendered actors/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1453)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 3.2ms | Allocations: 2715)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h2>Actor Name: <%= @movie.name %></h2>
+    2: 
+    3: <h2>Description:</h2> <%= @actor.description %>
+    4: 
+  
+app/views/actors/show.html.erb:1
+Started GET "/actors/1" for ::1 at 2019-10-23 19:22:51 +0530
+Processing by ActorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mActor Load (0.6ms)[0m  [1m[34mSELECT `actors`.* FROM `actors` WHERE `actors`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/actors_controller.rb:8:in `show'
+  Rendering actors/show.html.erb within layouts/application
+  Rendered actors/show.html.erb within layouts/application (Duration: 341.0ms | Allocations: 148028)
+Completed 500 Internal Server Error in 352ms (ActiveRecord: 0.6ms | Allocations: 149792)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `actor' for #<#<Class:0x00007fbed5d0ac50>:0x00007fbed5d126f8>
+Did you mean?  @actor):
+    1: <h2>Actor Name: <%= actor.name %></h2>
+    2: 
+    3: <h2>Description:</h2> <%= @actor.description %>
+    4: 
+  
+app/views/actors/show.html.erb:1
+Started GET "/actors/1" for ::1 at 2019-10-23 19:23:04 +0530
+Processing by ActorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mActor Load (0.4ms)[0m  [1m[34mSELECT `actors`.* FROM `actors` WHERE `actors`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/actors_controller.rb:8:in `show'
+  Rendering actors/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Actor'[0m
+  ↳ app/views/actors/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 183.8ms | Allocations: 78943)
+  Rendered actors/show.html.erb within layouts/application (Duration: 233.5ms | Allocations: 83714)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 2.1ms | Allocations: 85478)
+
+
+  
+ActionView::Template::Error (undefined method `comments_path' for #<#<Class:0x00007fbed5e41b78>:0x00007fbed5e4b3a8>
+Did you mean?  font_path):
+    1: <%= form_for [commentable, Comment.new] do |f| %>
+    2:     <%= f.text_area :body, placeholder: "Add a Comment" %>
+    3:   <%= f.submit %>
+    4: 
+  
+app/views/comments/_form.html.erb:1
+app/views/actors/show.html.erb:16
+Started GET "/actors/1" for ::1 at 2019-10-23 19:23:28 +0530
+Processing by ActorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mActor Load (0.4ms)[0m  [1m[34mSELECT `actors`.* FROM `actors` WHERE `actors`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/actors_controller.rb:8:in `show'
+  Rendering actors/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Actor'[0m
+  ↳ app/views/actors/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 3.5ms | Allocations: 599)
+  Rendered actors/show.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1759)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 1.2ms | Allocations: 21168)
+
+
+Started POST "/actors/1/comments" for ::1 at 2019-10-23 19:23:35 +0530
+Processing by Actors::CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"OaCamYE5hMIVnwRBhNFGvzytuORtmKrxEcDm/Sy4P5ODtaH7u/vk1gpf9hARxISQ6yo7BAvOnctF4RPEF4u8Ew==", "comment"=>{"body"=>"test1"}, "commit"=>"Create Comment", "actor_id"=>"1"}
+  [1m[36mActor Load (0.3ms)[0m  [1m[34mSELECT `actors`.* FROM `actors` WHERE `actors`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/actors/comments_controller.rb:6:in `set_commentable'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO `comments` (`commentable_type`, `commentable_id`, `body`, `created_at`, `updated_at`) VALUES ('Actor', 1, 'test1', '2019-10-23 13:53:35.887004', '2019-10-23 13:53:35.887004')[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (46.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+Redirected to http://localhost:3000/actors/1
+Completed 302 Found in 53ms (ActiveRecord: 47.1ms | Allocations: 3415)
+
+
+Started GET "/actors/1" for ::1 at 2019-10-23 19:23:35 +0530
+Processing by ActorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mActor Load (0.3ms)[0m  [1m[34mSELECT `actors`.* FROM `actors` WHERE `actors`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/actors_controller.rb:8:in `show'
+  Rendering actors/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Actor'[0m
+  ↳ app/views/actors/show.html.erb:7:in `each_with_index'
+  Rendered comments/_form.html.erb (Duration: 1.0ms | Allocations: 401)
+  Rendered actors/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1258)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.7ms | Allocations: 19722)
+
+
+Started GET "/actors/" for ::1 at 2019-10-23 19:23:39 +0530
+Processing by ActorsController#index as HTML
+  Rendering actors/index.html.erb within layouts/application
+  [1m[36mActor Load (0.5ms)[0m  [1m[34mSELECT `actors`.* FROM `actors`[0m
+  ↳ app/views/actors/index.html.erb:10:in `each_with_index'
+  Rendered actors/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 895)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.5ms | Allocations: 18961)
+
+
+Started GET "/movies/" for ::1 at 2019-10-23 19:24:16 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 306.3ms | Allocations: 151632)
+Completed 500 Internal Server Error in 344ms (ActiveRecord: 1.2ms | Allocations: 153542)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `actor' for #<#<Class:0x00007fbed0e704c8>:0x00007fbed0e836e0>
+Did you mean?  actor_url):
+    12:     <td><%= index+1 %>.</td>
+    13:     <td><%= movie.name %></td>
+    14:     <td><%= movie.description %></td>
+    15:     <td><%= link_to "Show", movie_path(actor)%> <%= "Edit Destroy" %></td>
+    16:   </tr>
+    17:   <% end %>
+    18: </table>
+  
+app/views/movies/index.html.erb:15
+app/views/movies/index.html.erb:10:in `each_with_index'
+app/views/movies/index.html.erb:10
+Started GET "/movies/" for ::1 at 2019-10-23 19:24:27 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 896)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.4ms | Allocations: 19771)
+
+
+Started GET "/" for ::1 at 2019-10-23 19:24:43 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 60.3ms | Allocations: 940)
+Completed 200 OK in 293ms (Views: 291.8ms | ActiveRecord: 0.0ms | Allocations: 19354)
+
+
+Started GET "/" for ::1 at 2019-10-23 19:25:59 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1023)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 19788)
+
+
+Started GET "/actors" for ::1 at 2019-10-23 19:26:00 +0530
+Processing by ActorsController#index as HTML
+  Rendering actors/index.html.erb within layouts/application
+  [1m[36mActor Load (1.8ms)[0m  [1m[34mSELECT `actors`.* FROM `actors`[0m
+  ↳ app/views/actors/index.html.erb:10:in `each_with_index'
+  Rendered actors/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 895)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 1.8ms | Allocations: 19404)
+
+
+Started GET "/movies" for ::1 at 2019-10-23 19:26:02 +0530
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 895)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.4ms | Allocations: 19411)
+
+

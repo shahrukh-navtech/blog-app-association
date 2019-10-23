@@ -1,0 +1,18 @@
+<h2>Movies List</h2>
+
+<table width="75%" align="left" border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>No. </th>
+    <th>Title</th>
+    <th>Descriptions</th>
+    <th>Actions</th>
+  </tr>
+  <% @movies.each_with_index do |movie, index| %>
+  <tr>
+    <td><%= index+1 %>.</td>
+    <td><%= movie.name %></td>
+    <td><%= movie.description %></td>
+    <td><%= link_to "Show", movie_path(movie)%> <%= "Edit Destroy" %></td>
+  </tr>
+  <% end %>
+</table>

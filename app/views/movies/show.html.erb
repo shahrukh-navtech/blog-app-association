@@ -1,0 +1,16 @@
+<h2>Movie Name: <%= @movie.name %></h2>
+
+<h2>Description:</h2> <%= @movie.description %>
+
+
+<h3>Comments: </h3>
+<% @movie.comments.each_with_index do |comment, index | %>
+  <table>
+    <tr>
+      <td><%= index+1 %>. </td>
+      <td><%= comment.body %></td>
+    </tr>
+  </table>
+<% end %>
+
+<%= render partial: "comments/form", locals: {commentable: @movie} %>
