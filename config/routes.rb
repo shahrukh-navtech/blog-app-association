@@ -24,6 +24,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+      post 'articles', to: 'articles#showcols'
+
       resources :articles
     end
   end
@@ -33,6 +35,8 @@ Rails.application.routes.draw do
   get '/categorization/:id', to: 'categorization#show'
 
   get '/subscriptions', to: 'subscriptions#index'
+
+
 
   root 'welcome#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

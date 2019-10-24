@@ -2,6 +2,9 @@ class ArticlesController < ApplicationController
 
 	def index
 		@articles = Article.all
+
+		@cols = Article.column_names
+
 	end
 
 	def edit
@@ -26,7 +29,7 @@ class ArticlesController < ApplicationController
 		@article = Article.create(title: params[:articles][:title], author: Author.find_by(id: params[:articles][:author]), body: params[:articles][:body], url: params[:articles][:url])
 		#binding.pry
 		if !@article.errors.any?
-			render json: @article, status: 200, location: article_path(@article)
+			render json: @article, status: 200
 		else
 			render json: @article.errors, status: :unprocessable_entity
 		end

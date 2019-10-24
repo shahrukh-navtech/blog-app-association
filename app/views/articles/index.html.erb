@@ -41,4 +41,12 @@
 <br><br>
 <%= link_to 'Back to Home', root_path %>
 
+  <%= form_with scope: :articles, url: api_v1_articles_path, local: true do |form| %>
+
+
+    <%= select_tag "article[]", options_for_select(@cols.collect{|x| [x]}), {:multiple => :multiple, :size => 10} %>
+
+    <%= form.submit :Submit %>
+
+  <% end %>
 </div>
