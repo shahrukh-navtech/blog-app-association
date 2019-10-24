@@ -35,10 +35,6 @@
 		<td><%= form.text_field :url %></td>
 	</tr>
 
-
-
-
-
 </table> 
 <%= form.submit :Submit %>
 <% end %>
@@ -46,11 +42,6 @@
 <br>
 <%= link_to 'Show all Articles', articles_path %>
 <br><br>
-<% if @article.errors.full_messages.any? %>
-  <% @article.errors.full_messages.each do |error_message| %>
-    <%= error_message if @article.errors.full_messages.first == error_message %> <br />
-  <% end %>
-<% end %>
 <%= link_to 'Back to Home', root_path %>
 
 </div>

@@ -2,7 +2,6 @@ class ArticlesController < ApplicationController
 
 	def index
 		@articles = Article.all
-
 	end
 
 	def edit
@@ -25,8 +24,13 @@ class ArticlesController < ApplicationController
 	def create
 
 		@article = Article.create(title: params[:articles][:title], author: Author.find_by(id: params[:articles][:author]), body: params[:articles][:body], url: params[:articles][:url])
+		#binding.pry
+		if !@article.errors.any?
+			render json: @article, status: 200, location: article_path(@article)
+		else
+			render json: @article.errors, status: :unprocessable_entity
+		end
 
-		redirect_to articles_path
 
 	end
 
@@ -79,7 +83,10 @@ class ArticlesController < ApplicationController
 
 	end
 
-
-
+	# private
+	#
+	# 	def article_params
+	# 		params.require(:articles).permit(:title, :author, :body, :url)
+	# 	end
 
 end

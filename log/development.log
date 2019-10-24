@@ -29098,3 +29098,1262 @@ Processing by MoviesController#index as HTML
 Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.4ms | Allocations: 19411)
 
 
+Started GET "/" for ::1 at 2019-10-24 11:27:37 +0530
+  [1m[35m (103.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5323.9ms | Allocations: 1339785)
+Completed 200 OK in 5423ms (Views: 5415.6ms | ActiveRecord: 0.0ms | Allocations: 1359430)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-10-24 11:27:44 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/actors" for ::1 at 2019-10-24 11:27:45 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ActorsController#index as HTML
+Completed 200 OK in 59ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1432)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-10-24 11:27:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/actors" for ::1 at 2019-10-24 11:27:45 +0530
+Processing by ActorsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-10-24 11:27:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/actors" for ::1 at 2019-10-24 11:27:54 +0530
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (27.3ms)[0m  [1m[34mSELECT `actors`.* FROM `actors`[0m
+  ↳ app/controllers/actors_controller.rb:5:in `index'
+Completed 200 OK in 174ms (Views: 20.2ms | ActiveRecord: 152.0ms | Allocations: 5571)
+
+
+Started GET "/actors" for ::1 at 2019-10-24 11:28:42 +0530
+Processing by ActorsController#index as HTML
+  Rendering actors/index.html.erb within layouts/application
+  [1m[36mActor Load (0.3ms)[0m  [1m[34mSELECT `actors`.* FROM `actors`[0m
+  ↳ app/views/actors/index.html.erb:10:in `each_with_index'
+  Rendered actors/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 3949)
+Completed 200 OK in 72ms (Views: 67.5ms | ActiveRecord: 1.6ms | Allocations: 23247)
+
+
+Started GET "/" for ::1 at 2019-10-24 11:28:46 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 782)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 18760)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 11:28:52 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (60.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:17
+  [1m[36mAuthor Load (63.5ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 252.9ms | Allocations: 12930)
+Completed 200 OK in 311ms (Views: 103.9ms | ActiveRecord: 168.1ms | Allocations: 32148)
+
+
+Started GET "/authors" for ::1 at 2019-10-24 11:28:55 +0530
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/authors/index.html.erb:16
+  Rendered authors/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1107)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.3ms | Allocations: 19610)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 11:28:57 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:17
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1529)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 1.0ms | Allocations: 19441)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 11:28:59 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 81.4ms | Allocations: 4023)
+Completed 200 OK in 102ms (Views: 99.4ms | ActiveRecord: 0.4ms | Allocations: 22099)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 11:29:09 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"g5Aj/t/bmejwfQCDYhYbUglUriS806ZJ91i+Dj6vqrKwdBZ+ju0t+qhc6+q2tqDHvxKr/yxxPbzTqPNRd4h7QQ==", "articles"=>{"title"=>"Blog1", "author"=>"12", "body"=>"erbg", "url"=>"rthfrgbh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (41.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (163.7ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('Blog1', 'erbg', 'rthfrgbh', '2019-10-24 05:59:09.761876', '2019-10-24 05:59:09.761876', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (63.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 275ms (ActiveRecord: 268.5ms | Allocations: 3477)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 11:29:10 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:17
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:22
+  [1m[36mCACHE Author Load (0.0ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2281)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.6ms | Allocations: 20186)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 11:29:24 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 41ms (Views: 9.1ms | ActiveRecord: 1.6ms | Allocations: 6145)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 11:31:00 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1187)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 11:44:52 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 5044)
+Completed 200 OK in 350ms (Views: 282.0ms | ActiveRecord: 1.4ms | Allocations: 28793)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 11:44:58 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+Completed 400 Bad Request in 69ms (ActiveRecord: 0.0ms | Allocations: 649)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/articles_controller.rb:93:in `article_params'
+app/controllers/articles_controller.rb:29:in `create'
+Started POST "/articles" for ::1 at 2019-10-24 11:45:26 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+Completed 400 Bad Request in 138108ms (ActiveRecord: 0.0ms | Allocations: 158642)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/articles_controller.rb:94:in `article_params'
+app/controllers/articles_controller.rb:29:in `create'
+Started POST "/articles" for ::1 at 2019-10-24 11:47:49 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 62.3ms | Allocations: 6809)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Author(#70342954539620) expected, got "12" which is an instance of String(#70342920273400)):
+  
+app/controllers/articles_controller.rb:29:in `create'
+Started POST "/articles" for ::1 at 2019-10-24 11:54:18 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+[31mUnpermitted parameter: :author[0m
+Completed 422 Unprocessable Entity in 63ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7503)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 11:54:59 +0530
+  
+SyntaxError (/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected tCONSTANT, expecting ')'
+...).permit(:title, :author Author.find(:author), :body, :url)
+...                         ^~~~~~
+/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+..., :author Author.find(:author), :body, :url)
+...                              ^):
+  
+app/controllers/articles_controller.rb:94: syntax error, unexpected tCONSTANT, expecting ')'
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+app/controllers/articles_controller.rb:94: syntax error, unexpected tCONSTANT, expecting ')'
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+app/controllers/articles_controller.rb:94: syntax error, unexpected tCONSTANT, expecting ')'
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+Started POST "/articles" for ::1 at 2019-10-24 11:55:14 +0530
+  
+SyntaxError (/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected ':', expecting ')'
+...ticles).permit(:title, :author: Author.find(:author), :body,...
+...                              ^
+/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+... :author: Author.find(:author), :body, :url)
+...                              ^):
+  
+app/controllers/articles_controller.rb:94: syntax error, unexpected ':', expecting ')'
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+app/controllers/articles_controller.rb:94: syntax error, unexpected ':', expecting ')'
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+app/controllers/articles_controller.rb:94: syntax error, unexpected ':', expecting ')'
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting end
+Started POST "/articles" for ::1 at 2019-10-24 11:55:23 +0530
+  
+SyntaxError (/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+...r: Author.find(:author), :body, :url)
+...                              ^):
+  
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+Started POST "/articles" for ::1 at 2019-10-24 11:55:39 +0530
+  
+SyntaxError (/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+...=> Author.find(:author), :body, :url)
+...                              ^):
+  
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+Started POST "/articles" for ::1 at 2019-10-24 11:55:45 +0530
+  
+SyntaxError (/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+...=> Author.find(:author), :body, :url)
+...                              ^):
+  
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+Started POST "/articles" for ::1 at 2019-10-24 11:55:57 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (91.9ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:94:in `article_params'
+Completed 404 Not Found in 231ms (ActiveRecord: 153.4ms | Allocations: 3395)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=author):
+  
+app/controllers/articles_controller.rb:94:in `article_params'
+app/controllers/articles_controller.rb:29:in `create'
+Started POST "/articles" for ::1 at 2019-10-24 11:56:31 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 0.0ms | Allocations: 99534)
+
+
+  
+NameError (undefined local variable or method `articles' for #<ArticlesController:0x00007ff3ff39a8a0>
+Did you mean?  articles_url):
+  
+app/controllers/articles_controller.rb:94:in `article_params'
+app/controllers/articles_controller.rb:29:in `create'
+Started POST "/articles" for ::1 at 2019-10-24 11:56:46 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:94:in `article_params'
+[31mUnpermitted parameter: :author[0m
+Completed 422 Unprocessable Entity in 90ms (Views: 0.3ms | ActiveRecord: 51.2ms | Allocations: 11633)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 11:57:02 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ (pry):2:in `article_params'
+  [1m[36mCACHE Author Load (0.0ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:94:in `article_params'
+[31mUnpermitted parameter: :author[0m
+Completed 422 Unprocessable Entity in 22292ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 31428)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 11:57:26 +0530
+  
+SyntaxError (/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+...ms[:articles][:author]), :body, :url)
+...                              ^):
+  
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+app/controllers/articles_controller.rb:94: syntax error, unexpected ',', expecting =>
+Started POST "/articles" for ::1 at 2019-10-24 12:06:28 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+  
+ActionController::InvalidAuthenticityToken (The browser returned a 'null' origin for a request with origin-based forgery protection turned on. This usually
+means you have the 'no-referrer' Referrer-Policy header enabled, or that the request came from a site that
+refused to give its origin. This makes it impossible for Rails to verify the source of the requests. Likely the
+best solution is to change your referrer policy to something less strict like same-origin or strict-origin.
+If you cannot change the referrer policy, you can disable origin checking with the
+Rails.application.config.action_controller.forgery_protection_origin_check setting.
+):
+  
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:444:in `valid_request_origin?'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:297:in `verified_request?'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:236:in `verify_authenticity_token'
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/articles" for ::1 at 2019-10-24 12:06:58 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"GPgCaefTmkrcpYjRxx9LP2juFd0tXrDNW4EW2DG7uRV7zd/0X8TQlEHWVuYBMb/h2LDxmoGEzbRn3WHzC5GLwA==", "articles"=>{"title"=>"rh", "author"=>"12", "body"=>"tyhty", "url"=>"htyh"}, "commit"=>"Submit"}
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 389)
+
+
+  
+ActionController::InvalidAuthenticityToken (The browser returned a 'null' origin for a request with origin-based forgery protection turned on. This usually
+means you have the 'no-referrer' Referrer-Policy header enabled, or that the request came from a site that
+refused to give its origin. This makes it impossible for Rails to verify the source of the requests. Likely the
+best solution is to change your referrer policy to something less strict like same-origin or strict-origin.
+If you cannot change the referrer policy, you can disable origin checking with the
+Rails.application.config.action_controller.forgery_protection_origin_check setting.
+):
+  
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:444:in `valid_request_origin?'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:297:in `verified_request?'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:236:in `verify_authenticity_token'
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/articles/new" for ::1 at 2019-10-24 12:07:07 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 5045)
+Completed 200 OK in 371ms (Views: 265.8ms | ActiveRecord: 40.0ms | Allocations: 31353)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:07:15 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"Q+PGqsqtvuuMCbgsMfLN/N1A2YN8Rf1CZj5XuOl66qIg1hs3crr0NRF6Zhv33DkibR49xNCfgDtaYiCT01DYdw==", "articles"=>{"title"=>"tfrhrtf", "author"=>"12", "body"=>"hfhr", "url"=>"tfrhb"}, "commit"=>"Submit"}
+Started GET "/articles/new" for ::1 at 2019-10-24 12:07:45 +0530
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 32638ms (ActiveRecord: 0.0ms | Allocations: 21900)
+
+
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 5045)
+Completed 200 OK in 48ms (Views: 34.9ms | ActiveRecord: 3.0ms | Allocations: 28756)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:07:52 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"5VBLvamA74uJYU0XAL5wqQGVO+7DVKk97Gbk+qhCe9SGZZYgEZelVRQSkyDGkIR3scvfqW+O1ETQOpPRkmhJAQ==", "articles"=>{"title"=>"tdrbhtr", "author"=>"12", "body"=>"htfgrh", "url"=>"frth"}, "commit"=>"Submit"}
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 95201ms (ActiveRecord: 0.0ms | Allocations: 19598)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:09:32 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 5046)
+Completed 200 OK in 220ms (Views: 167.9ms | ActiveRecord: 3.3ms | Allocations: 28766)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:09:35 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"wz4MJBPNERpZw3u/u5KIT+Ow+3ra6XM/8mWQwC4NG+qgC9G5q9pbxMSwpYh9vHyRU+4fPXYzDkbOOefrFCcpPw==", "articles"=>{"title"=>"jynj", "author"=>"12", "body"=>"y", "url"=>"hytjyg"}, "commit"=>"Submit"}
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 3029ms (ActiveRecord: 0.0ms | Allocations: 12055)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:09:47 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 1.3ms | Allocations: 1337)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:09:51 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1284)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:10:13 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 5067)
+Completed 200 OK in 165ms (Views: 104.2ms | ActiveRecord: 3.0ms | Allocations: 28756)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:10:17 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"yeO7GIm1QhZZqRXE8VfmuTtV/PdRRaByGngF61iWLumq1maFMaIIyMTay/M3eRJniwsYsP2f3QsmJHLAYrwcPA==", "articles"=>{"title"=>"dsvcdx", "author"=>"12", "body"=>"gfdgbrd", "url"=>"hfgh"}, "commit"=>"Submit"}
+[31mUnpermitted parameter: :author[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1772)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:10:42 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"yeO7GIm1QhZZqRXE8VfmuTtV/PdRRaByGngF61iWLumq1maFMaIIyMTay/M3eRJniwsYsP2f3QsmJHLAYrwcPA==", "articles"=>{"title"=>"dsvcdx", "author"=>"12", "body"=>"gfdgbrd", "url"=>"hfgh"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 2.2ms | Allocations: 6782)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Author(#70342968544040) expected, got "12" which is an instance of String(#70342920273400)):
+  
+app/controllers/articles_controller.rb:29:in `create'
+Started GET "/articles/new" for ::1 at 2019-10-24 12:11:42 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 5044)
+Completed 200 OK in 336ms (Views: 232.2ms | ActiveRecord: 50.2ms | Allocations: 28763)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:11:44 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"jjeYJKZB2r87ryMfdZbW2km1UJW4hkMEWlNlggJEAFbtAkW5HlaQYabc/SizuCIE+eu00hRcPn1mDxKpOG4ygw==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (1.1ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.1ms | Allocations: 2681)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"articles", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/articles_controller.rb:30:in `create'
+Started POST "/articles" for ::1 at 2019-10-24 12:12:15 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"jjeYJKZB2r87ryMfdZbW2km1UJW4hkMEWlNlggJEAFbtAkW5HlaQYabc/SizuCIE+eu00hRcPn1mDxKpOG4ygw==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 48ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 11898)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/articles_controller.rb:31:in `create'
+Started POST "/articles" for ::1 at 2019-10-24 12:12:27 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"jjeYJKZB2r87ryMfdZbW2km1UJW4hkMEWlNlggJEAFbtAkW5HlaQYabc/SizuCIE+eu00hRcPn1mDxKpOG4ygw==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 66ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 11586)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:13:22 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.8ms | Allocations: 1324)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:15:33 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"jjeYJKZB2r87ryMfdZbW2km1UJW4hkMEWlNlggJEAFbtAkW5HlaQYabc/SizuCIE+eu00hRcPn1mDxKpOG4ygw==", "articles"=>{"title"=>"fgynjt", "author"=>"12", "body"=>"ngjtgkyhmu", "url"=>"uhky"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('fgynjt', 'ngjtgkyhmu', 'uhky', '2019-10-24 06:45:33.943132', '2019-10-24 06:45:33.943132', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (213.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 222ms (Views: 0.4ms | ActiveRecord: 214.3ms | Allocations: 3152)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:15:38 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1429)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:15:47 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1523)
+Completed 200 OK in 262ms (Views: 261.2ms | ActiveRecord: 0.3ms | Allocations: 19606)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:18:54 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"kvWgwBCrN0Pm21aYs9coi+v71R6zggMIyyVgwNBZyhzxwH1dqLx9nXuoiK91+dxVW6UxWR9YfnH3eRfr6nP4yQ==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 58518ms (Views: 0.4ms | ActiveRecord: 46.7ms | Allocations: 50794)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:20:00 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 5045)
+Completed 200 OK in 268ms (Views: 249.7ms | ActiveRecord: 5.3ms | Allocations: 28749)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:20:01 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"lEofpooo/eJjVJs98snqXCFHHiutNqGebk2qIzJE9lT3f8I7Mj+3PP4nRQo05x6CkRn6bAHs3OdSEd0ICG7EgQ==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 2158)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:20:07 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"lEofpooo/eJjVJs98snqXCFHHiutNqGebk2qIzJE9lT3f8I7Mj+3PP4nRQo05x6CkRn6bAHs3OdSEd0ICG7EgQ==", "articles"=>{"title"=>"rthr", "author"=>"12", "body"=>"hrth", "url"=>"frtgh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (2.8ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('rthr', 'hrth', 'frtgh', '2019-10-24 06:50:07.542110', '2019-10-24 06:50:07.542110', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (183.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 197ms (Views: 0.5ms | ActiveRecord: 186.9ms | Allocations: 3179)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:20:11 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 1587)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:21:34 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"lEofpooo/eJjVJs98snqXCFHHiutNqGebk2qIzJE9lT3f8I7Mj+3PP4nRQo05x6CkRn6bAHs3OdSEd0ICG7EgQ==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"dsv", "url"=>"frtgh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1568)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:22:09 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"lEofpooo/eJjVJs98snqXCFHHiutNqGebk2qIzJE9lT3f8I7Mj+3PP4nRQo05x6CkRn6bAHs3OdSEd0ICG7EgQ==", "articles"=>{"title"=>"jt", "author"=>"12", "body"=>"dsv", "url"=>"frtgh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (4.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('jt', 'dsv', 'frtgh', '2019-10-24 06:52:09.587513', '2019-10-24 06:52:09.587513', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 38ms (Views: 0.4ms | ActiveRecord: 19.0ms | Allocations: 12959)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:22:25 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 5045)
+Completed 200 OK in 45ms (Views: 29.9ms | ActiveRecord: 3.1ms | Allocations: 28747)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:22:29 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"q0dSsw7WDIbE2XVwjEXXLIWKwTra6QEr59fxoOlB95nIco8utsFGWFmqq0dKayPyNdQlfXYzfFLbi4aL02vFTA==", "articles"=>{"title"=>"rbd", "author"=>"12", "body"=>"rtghdegb", "url"=>"deth"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('rbd', 'rtghdegb', 'deth', '2019-10-24 06:52:29.102310', '2019-10-24 06:52:29.102310', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (42.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 53ms (Views: 0.4ms | ActiveRecord: 43.8ms | Allocations: 3810)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:37:03 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms | Allocations: 1861)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:37:32 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5045)
+Completed 200 OK in 398ms (Views: 244.0ms | ActiveRecord: 37.0ms | Allocations: 29093)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:37:35 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"Nlr4hry6ZRy3pQ+7MYo0LDYI+LII1LMjdxw8+74T46NVbyUbBK0vwirW0Yz3pMDyhlYc9aQOzlpLQEvQhDnRdg==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 422 Unprocessable Entity in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 2160)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:38:38 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 124.5ms | Allocations: 7484)
+Completed 200 OK in 2427ms (Views: 2269.5ms | ActiveRecord: 34.8ms | Allocations: 1366703)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:38:46 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"QIv7iugWcVzZCqaYbeRK3fobK+10Q5XVGyll1atfi60jviYXUAE7gkR5eK+ryr4DSkXPqtiZ6KwndRL+kXW5eA==", "articles"=>{"title"=>"rth", "author"=>"12", "body"=>"trdbh", "url"=>"ftgh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('rth', 'trdbh', 'ftgh', '2019-10-24 07:08:46.392253', '2019-10-24 07:08:46.392253', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (192.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 301ms (Views: 0.4ms | ActiveRecord: 193.1ms | Allocations: 5042)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:39:39 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"QIv7iugWcVzZCqaYbeRK3fobK+10Q5XVGyll1atfi60jviYXUAE7gkR5eK+ryr4DSkXPqtiZ6KwndRL+kXW5eA==", "articles"=>{"title"=>"rth", "author"=>"12", "body"=>"trdbh", "url"=>"ftgh"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (35.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('rth', 'trdbh', 'ftgh', '2019-10-24 07:09:39.607898', '2019-10-24 07:09:39.607898', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 44ms (Views: 0.3ms | ActiveRecord: 36.8ms | Allocations: 3172)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:39:41 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 2146)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:39:46 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 2123)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:40:26 +0530
+Processing by ArticlesController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 414)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:217:in `handle_unverified_request'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:249:in `handle_unverified_request'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:244:in `verify_authenticity_token'
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/articles" for ::1 at 2019-10-24 12:47:29 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ArticlesController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 409)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:217:in `handle_unverified_request'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:249:in `handle_unverified_request'
+actionpack (6.0.0) lib/action_controller/metal/request_forgery_protection.rb:244:in `verify_authenticity_token'
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/articles" for ::1 at 2019-10-24 12:49:03 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 2123)
+
+
+Started GET "/articles/new" for ::1 at 2019-10-24 12:49:32 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors`[0m
+  ↳ app/views/articles/new.html.erb:24
+  Rendered articles/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 1836)
+Completed 200 OK in 276ms (Views: 273.4ms | ActiveRecord: 0.4ms | Allocations: 20705)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 12:49:34 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"Gr2csbzAgLhTDwO+rXjuutCxw4ZU2I8mhlPNmc7CmkZ5iEEsBNfKZs583YlrVhpkYO8nwfgC8l+6D7qy9Oiokw==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1700)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 12:54:27 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 2030)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 11[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 11[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.`title` FROM `articles`[0m
+  [1m[35m (22.4ms)[0m  [1m[34mSELECT `author` FROM `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.`author_id` FROM `articles`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 11[0m
+Started GET "/movies" for ::1 at 2019-10-24 13:14:25 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (48.7ms)[0m  [1m[34mSELECT `movies`.* FROM `movies`[0m
+  ↳ app/views/movies/index.html.erb:10:in `each_with_index'
+  Rendered movies/index.html.erb within layouts/application (Duration: 82.7ms | Allocations: 4242)
+Completed 200 OK in 377ms (Views: 281.9ms | ActiveRecord: 49.4ms | Allocations: 23424)
+
+
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 11[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.`title` FROM `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.`title` FROM `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.`title` FROM `articles`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+Started GET "/articles" for ::1 at 2019-10-24 13:25:56 +0530
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 2125)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 13:26:02 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"Gr2csbzAgLhTDwO+rXjuutCxw4ZU2I8mhlPNmc7CmkZ5iEEsBNfKZs583YlrVhpkYO8nwfgC8l+6D7qy9Oiokw==", "articles"=>{"title"=>"", "author"=>"12", "body"=>"", "url"=>""}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1574)
+
+
+Started POST "/articles" for ::1 at 2019-10-24 13:26:09 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"Gr2csbzAgLhTDwO+rXjuutCxw4ZU2I8mhlPNmc7CmkZ5iEEsBNfKZs583YlrVhpkYO8nwfgC8l+6D7qy9Oiokw==", "articles"=>{"title"=>"xdg", "author"=>"12", "body"=>"bcdhcd", "url"=>"fhcdfb"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT `authors`.* FROM `authors` WHERE `authors`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[36mArticle Create (1.1ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `url`, `created_at`, `updated_at`, `author_id`) VALUES ('xdg', 'bcdhcd', 'fhcdfb', '2019-10-24 07:56:09.493218', '2019-10-24 07:56:09.493218', 12)[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+  [1m[35m (180.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `create'
+Completed 201 Created in 190ms (Views: 0.3ms | ActiveRecord: 182.2ms | Allocations: 3178)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 13:26:21 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2160)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 13:31:24 +0530
+  
+SyntaxError (/Users/navtech/Documents/GitHub/blog-app-association-completed-has-many-through/app/controllers/articles_controller.rb:6: syntax error, unexpected tIVAR, expecting do or '{' or '('
+...er status: 200, json @companies
+...                     ^~~~~~~~~~):
+  
+app/controllers/articles_controller.rb:6: syntax error, unexpected tIVAR, expecting do or '{' or '('
+app/controllers/articles_controller.rb:6: syntax error, unexpected tIVAR, expecting do or '{' or '('
+app/controllers/articles_controller.rb:6: syntax error, unexpected tIVAR, expecting do or '{' or '('
+Started GET "/articles" for ::1 at 2019-10-24 13:31:45 +0530
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 888)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 13:31:53 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:6:in `index'
+Completed 200 OK in 67ms (Views: 15.5ms | ActiveRecord: 48.7ms | Allocations: 7425)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 13:32:00 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 2160)
+
+
+Started GET "/articles" for ::1 at 2019-10-24 13:32:10 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/articles_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 19ms (Views: 13.8ms | ActiveRecord: 2.5ms | Allocations: 7095)
+
+
+Started GET "/api/v1/articles" for ::1 at 2019-10-24 14:46:39 +0530
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/articles"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/articles" for ::1 at 2019-10-24 14:47:17 +0530
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (48.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/api/v1/articles_controller.rb:6:in `index'
+Completed 200 OK in 170ms (Views: 10.6ms | ActiveRecord: 125.5ms | Allocations: 7433)
+
+
+Started GET "/api/v1/articles" for ::1 at 2019-10-24 14:47:36 +0530
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/api/v1/articles_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 4.2ms | Allocations: 7094)
+
+
+Started GET "/api/v1/articles" for ::1 at 2019-10-24 15:00:44 +0530
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/controllers/api/v1/articles_controller.rb:6:in `index'
+Completed 200 OK in 135ms (Views: 44.2ms | ActiveRecord: 3.5ms | Allocations: 7927)
+
+
