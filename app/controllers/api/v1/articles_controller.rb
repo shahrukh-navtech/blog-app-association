@@ -3,20 +3,16 @@ module Api
     class ArticlesController < ApplicationController
 
       def index
-        @articles = Article.all
-        render status: 200, json: @articles, location: articles_path
+        render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.all()
       end
 
-      def showcols
+      def create
         @cols = params[:article]
-        # render status:200, json: "#{Article.pluck @cols}"
         render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.single_col(@cols)
       end
 
       def show
-        #@article = Article.find(params[:id])
         @id = params[:id]
-        #render status: 200, json: @article
         render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.single(@id)
       end
 

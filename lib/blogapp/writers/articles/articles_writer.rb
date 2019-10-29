@@ -8,7 +8,9 @@ module Blogapp
         end
 
         def single_col(resource)
-          return "#{Article.pluck resource}"
+          binding.pry
+          return Article.pluck(resource)
+          #return Article.pluck(resource.to_sym)
         end
 
 

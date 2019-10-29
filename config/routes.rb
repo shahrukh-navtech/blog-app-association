@@ -24,9 +24,15 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      post 'articles', to: 'articles#showcols'
+      #post 'articles', to: 'articles#showcols'
 
-      resources :articles
+      resources :articles do
+        resources :author
+      end
+
+      resources :authors do
+        resources :article
+      end
     end
   end
 
