@@ -1,11 +1,14 @@
 module Blogapp
   module Writers
     module Articles
-      class ArticleWriter
-        require 'async'
+      class ArticlesWriter
 
         def single(resource)
-          return "#{Article.pluck @cols}"
+          return Article.find(resource)
+        end
+
+        def single_col(resource)
+          return "#{Article.pluck resource}"
         end
 
 
