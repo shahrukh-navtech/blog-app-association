@@ -1,6 +1,6 @@
 <h2>Actors List</h2>
 
-<table width="75%" align="left" border="1" cellspacing="0" cellpadding="10">
+<table width="100%" border="1" cellspacing="0" cellpadding="10">
   <tr>
     <th>No. </th>
     <th>Name</th>
@@ -12,7 +12,10 @@
     <td><%= index+1 %>.</td>
     <td><%= actor.name %></td>
     <td><%= actor.description %></td>
-    <td><%= link_to "Show", actor_path(actor)%> <%= "Edit Destroy" %></td>
+    <td><%= link_to "Show", actor_path(actor)%> <%= link_to "Edit", edit_actor_path(actor)%> <%= link_to "Destroy", actor_path(actor), method: :delete, data: { confirm: "Are You sure to Delete \"#{actor.name}\""} %></td>
   </tr>
   <% end %>
+
 </table>
+
+<%= link_to "Create New", new_actor_path %>

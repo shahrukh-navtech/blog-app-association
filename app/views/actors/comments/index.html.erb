@@ -1,0 +1,8 @@
+<% @actor.comments.each_with_index do |comment, index | %>
+  <table>
+    <tr>
+      <td><%= index+1 %>. </td>
+      <td><%= comment.body %></td>
+    </tr>
+  </table>
+<% end %>

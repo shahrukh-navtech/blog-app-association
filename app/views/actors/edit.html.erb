@@ -1,0 +1,29 @@
+<div align="center">
+
+<h1>EDIT Actor</h1>
+
+<%= form_with model: @actor, local: true do |form| %>
+
+<table>
+	<tr>
+		<th align="left"><%= form.label :name %><br></th>
+		<td><%= form.text_field :name %></td>
+	</tr>
+
+	<tr>
+		<th align="left"><%= form.label :description %></th>
+		<td><%= form.text_area :description, cols: "100", rows: "20" %></td>
+	</tr>
+
+
+</table> 
+<%= form.submit :Submit %>
+
+<% end %>
+
+<br>
+<%= link_to 'Show all Actors', actors_path %>
+<br><br>
+<%= link_to 'Back to Home', root_path %>
+
+</div>
