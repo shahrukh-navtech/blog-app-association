@@ -6,12 +6,9 @@ class Movies::CommentsController < CommentsController
 
   end
 
-
-
   private
     def set_commentable
       @commentable = Movie.find(params[:movie_id])
     end
-
 
 end

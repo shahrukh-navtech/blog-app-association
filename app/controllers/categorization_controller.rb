@@ -1,10 +1,7 @@
 class CategorizationController < ApplicationController
-	def index
 	
+	def index
 		@categories = Category.all
-
-		puts @categories
-
 	end
 
 end

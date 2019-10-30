@@ -16,7 +16,6 @@ module Api
         render status: 200, json: JSON.pretty_generate(JSON.parse(Blogapp::Writers::Authors::AuthorsWriter.new.single(@id).to_json))
       end
 
-
     end
   end
 end
