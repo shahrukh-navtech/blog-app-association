@@ -1,6 +1,6 @@
-<h2>Movies List</h2>
+<h2>Movies List </h2>
 
-<table width="75%" align="left" border="1" cellspacing="0" cellpadding="10">
+<table align="left" border="1" cellspacing="0" cellpadding="10">
   <tr>
     <th>No. </th>
     <th>Title</th>
@@ -12,7 +12,10 @@
     <td><%= index+1 %>.</td>
     <td><%= movie.name %></td>
     <td><%= movie.description %></td>
-    <td><%= link_to "Show", movie_path(movie)%> <%= "Edit Destroy" %></td>
+    <td><%= link_to "Show", movie_path(movie)%> <%= link_to "Edit", edit_movie_path(movie)%> <%= link_to "Destroy", movie_path(movie), method: :delete, data: { confirm: "Are You sure to Delete \"#{movie.name}\""} %></td>
   </tr>
   <% end %>
+
 </table>
+
+<%= link_to "Create New", new_movie_path %>

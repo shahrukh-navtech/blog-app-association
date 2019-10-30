@@ -4,7 +4,7 @@ module Api
 
       def index
         @id = params[:article_id]
-        render status: 200, json: Blogapp::Writers::Articles::AuthorWriter.new.find_author(@id)
+        render status: 200, json: JSON.pretty_generate(JSON.parse(Blogapp::Writers::Articles::AuthorWriter.new.find_author(@id).to_json))
 
         # @articles = Article.all
         # render status: 200, json: @articles, location: articles_path
