@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-	#validates :title, presence: true, message
-	validates_presence_of :title, message: 'Put some Title please'
+	validates_presence_of :title, message: 'must exist'
+	validates_presence_of :body, message: 'must exist'
 	belongs_to :author
 end

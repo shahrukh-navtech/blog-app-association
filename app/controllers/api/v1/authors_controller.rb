@@ -16,6 +16,15 @@ module Api
         render status: 200, json: JSON.pretty_generate(JSON.parse(Blogapp::Writers::Authors::AuthorsWriter.new.single(@id).to_json))
       end
 
+      def create
+        @params = params
+        render status: 200, json: JSON.pretty_generate(JSON.parse(Blogapp::Writers::Authors::AuthorsWriter.new.add_record(@params).to_json))
+      end
+
+      def update
+        render status: 200, json: JSON.pretty_generate(JSON.parse(Blogapp::Writers::Authors::AuthorsWriter.new.update_record(params).to_json))
+      end
+
     end
   end
 end

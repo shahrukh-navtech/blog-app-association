@@ -29,6 +29,9 @@ class AuthorsController < ApplicationController
 
 	def show
 		@author = Author.find(params[:id])
+	rescue StandardError => e
+  	flash[:error] = e.message
+  	redirect_to authors_path
 	end
 
 	def destroy

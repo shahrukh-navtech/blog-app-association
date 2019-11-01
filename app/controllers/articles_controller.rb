@@ -10,20 +10,23 @@ class ArticlesController < ApplicationController
 		@authors = Author.all
 	end
 
-
 	def new
 		puts "Inside New Action of ArticlesController"
 		@authors = Author.all
 		@article = Article.new
 	end
 
-
 	def create
-		@article = Article.create(title: params[:articles][:title], author: Author.find_by(id: params[:articles][:author]), body: params[:articles][:body], url: params[:articles][:url])
-		if !@article.errors.any?
-			render json: @article, status: 200
+		@article = Article.new(article_params)
+
+		if @article.save
+			redirect_to articles_path
 		else
-			render json: @article.errors, status: :unprocessable_entity
+			flash[:notice] = []
+			@article.errors.full_messages.each do |msg|
+				flash[:notice] << msg
+			end
+			redirect_to new_article_path
 		end
 	end
 
@@ -40,7 +43,9 @@ class ArticlesController < ApplicationController
 
 	def show
 		@article = Article.find(params[:id])
-		puts @article
+	rescue ActiveRecord::RecordNotFound
+  	flash[:error] = "Record Not found on id : #{params[:id]}"
+  	redirect_to articles_path
 	end
 
 	def destroy
@@ -48,5 +53,10 @@ class ArticlesController < ApplicationController
 		@article.destroy
 		redirect_to articles_path
 	end
+
+	private
+		def article_params
+			params.require(:articles).permit(:title, :author_id, :body, :url)
+		end
 	
 end

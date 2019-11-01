@@ -1,4 +1,13 @@
-
+<%if flash.present? %>
+	Errors Occured
+	<ul>
+		<p> 
+			<% flash.each do |key, value| %>
+				<li><p style="color: red"><%= value %> </p></li>
+			<% end %>
+		</p>
+	</ul>
+<% end %>
 
 <div align="center">
 
@@ -12,7 +21,6 @@
 		<th>URL</th>
 		<th></th>
 	</tr>
-
 
 	<% @articles.each do |article| %>
 
@@ -34,7 +42,6 @@
 
 	<% end %>
 </table>
-
 
 <br>
 <%= link_to "Create New Blog Article", new_article_path %>
