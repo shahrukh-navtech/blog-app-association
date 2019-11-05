@@ -1,0 +1,7 @@
+<% if current_user.id == 1 %>
+  <% @users.each_with_index do |user, index| %>
+    <%= index + 1 %> --> <%= user.email %><br>
+  <% end %>
+<% else %>
+  <p>Sign in with Main Account</p>
+<% end %>

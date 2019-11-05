@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'subscriptions/index'
   get 'welcome/index'
 
@@ -41,6 +42,8 @@ Rails.application.routes.draw do
   get '/categorization/:id', to: 'categorization#show'
 
   get '/subscriptions', to: 'subscriptions#index'
+
+  get '/users', to: 'users#index'
 
 
 

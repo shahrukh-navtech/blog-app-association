@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+	before_action :authenticate_user!, only: [:edit, :destroy]
 
 	def index
 		@articles = Article.all
@@ -43,7 +44,9 @@ class ArticlesController < ApplicationController
 
 	def show
 		@article = Article.find(params[:id])
-	rescue ActiveRecord::RecordNotFound
+	#rescue ActiveRecord::RecordNotFound
+	rescue StandardError => e
+  	binding.pry
   	flash[:error] = "Record Not found on id : #{params[:id]}"
   	redirect_to articles_path
 	end
