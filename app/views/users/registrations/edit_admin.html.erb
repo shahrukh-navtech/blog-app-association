@@ -1,0 +1,51 @@
+<h2>Edit <%= @user.email.to_s.humanize %></h2>
+
+<%= form_for( @user, :url => users_edit_admin_path(:user), html: { method: :patch }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <%= f.hidden_field :id %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <% if current_user.user_type == "S" %>
+      <%= f.radio_button :user_type, 'Management' %> Management<br />
+    <% end %>
+    <% if current_user.user_type == "Management" %>
+      <%= f.radio_button :user_type, 'Admin' %> Admin<br />
+    <% end %>
+    <% if current_user.user_type == "Management" || current_user.user_type == "Admin" %>
+      <%= f.radio_button :user_type, 'Hiring Manager' %> Hiring Manager<br />
+    <% end %>
+    <% if current_user.user_type == "Management" || current_user.user_type == "Admin" %>
+      <%= f.radio_button :user_type, 'Employee' %> Employee<br />
+    <% end %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+<% end %>
+
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <%= button_to "Cancel my account", delete_user_path(@user), data: { confirm: "Are you sure?" }, method: :delete %></p>
+
+<%= link_to "Back", :back %>

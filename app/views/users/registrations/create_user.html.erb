@@ -1,0 +1,56 @@
+<h2>Create New User</h2>
+
+<%= form_for(@user, url: user_create_user_path(:user), html: { method: :post })  do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Account Type" %><br />
+    <% if current_user.user_type == "S" %>
+      <%= f.radio_button :user_type, 'Management' %> Management<br />
+    <% end %>
+    <% if current_user.user_type == "Management" %>
+      <%= f.radio_button :user_type, 'Admin' %> Admin<br />
+    <% end %>
+    <% if current_user.user_type == "Management" || current_user.user_type == "Admin" %>
+      <%= f.radio_button :user_type, 'Hiring Manager' %> Hiring Manager<br />
+    <% end %>
+    <% if current_user.user_type == "Management" || current_user.user_type == "Admin" %>
+      <%= f.radio_button :user_type, 'Employee' %> Employee<br />
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Add User" %>
+  </div>
+<% end %>
+
+
+<%= link_to "Back", :back %>

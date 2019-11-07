@@ -1,7 +1,18 @@
-<% if current_user.id == 1 %>
+<% if current_user.present? && (current_user.user_type == "Admin" || current_user.user_type == "Management" || current_user.user_type == "Hiring Manager")  %>
+  <h2>Users List</h2>
+  <table>
   <% @users.each_with_index do |user, index| %>
-    <%= index + 1 %> --> <%= user.email %><br>
+      <tr>
+        <td><%= index + 1 %> --> <%= user.email %>  </td>
+        <td>| <%= link_to "Show", users_show_path(user) %> </td>
+        <td>| <%= link_to "Edit", edit_user_path(user) %>  </td>
+        <td>| <%= link_to 'DELETE', delete_user_path(user), method: :delete, data: { confirm: "Are You sure to Delete \"#{user.first_name}\""} %></td>
+      </tr>
   <% end %>
+  </table>
 <% else %>
   <p>Sign in with Main Account</p>
 <% end %>
+
+
+<%= link_to "Back", :back %>

@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: "users/registrations"}
+
+  devise_scope :user do 
+    get "/users/:id/edit_admin" => "users/registrations#edit_admin"
+    get "/user/create_user" => "users/registrations#create_user"
+    post "/user/create_user" => "users/registrations#create_user_master"
+    patch "/users/edit_admin" => "users/registrations#update_admin"
+    put "/users/edit_admin" => "users/registrations#update_admin"
+    delete "/user/admin" => "users/registrations#delete_user"
+
+  end 
+
+
   get 'subscriptions/index'
   get 'welcome/index'
 
@@ -45,6 +57,13 @@ Rails.application.routes.draw do
 
   get '/users', to: 'users#index'
 
+  get '/users/:id', to: 'users#show', as: 'users_show'
+
+  get '/users/:id/edit_admin', to: 'users/registrations#edit_admin', as: 'edit_user'
+
+  get '/user/create_user', to: 'users/registrations#create_user', as: 'create_user'
+
+  delete '/user/admin', to: 'users/registrations#delete_user', as: 'delete_user'
 
 
   root 'welcome#index'
