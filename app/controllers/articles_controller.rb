@@ -3,8 +3,9 @@ class ArticlesController < ApplicationController
 	before_action :authenticate_user!, only: [:edit, :destroy]
 
 	def index
-		@articles = Article.all
-		authorize @articles
+		@all_articles = Article.all
+		# authorize @articles
+		@articles = policy_scope(@all_articles)
 		@cols = Article.column_names
 	end
 

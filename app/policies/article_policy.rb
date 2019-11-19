@@ -1,8 +1,11 @@
 class ArticlePolicy < ApplicationPolicy
   def index?
     # user.admin? or not record.published?
-    # article.user == self.current_user
-    true
+    # binding.pry
+    # @article.user == self.user
+    @articles = @article.each { |article| article.user == self.user }
+    # binding.pry
+    # true
   end
 
   def edit?
