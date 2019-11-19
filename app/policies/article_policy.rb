@@ -1,7 +1,5 @@
 class ArticlePolicy < ApplicationPolicy
   def index?
-    # user.admin? or not record.published?
-    # article.user == self.current_user
     true
   end
 
