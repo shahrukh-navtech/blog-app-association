@@ -5,6 +5,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   before_action :configure_account_update_params, only: [:update]
   before_action :configure_admin_account_update_params, only: [:update_admin]
   before_action :configure_master_account_update_params, only: [:create_user_master]
+  # after_action only: [:create] do
+  #   if signed_in?
+  #     UserMailer.new_signup(params[:user][:first_name], params[:user][:email]).deliver_now
+  #   end
+  # end
 
   # GET /resource/sign_up
   # def new
@@ -12,9 +17,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  #def create
-  #  super
-  #end
+  def create
+    super
+  end
 
   # GET /resource/edit
   def edit

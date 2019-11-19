@@ -1,13 +1,16 @@
 class ArticlesController < ApplicationController
+	# before_action :get_user, only: [:edit]
 	before_action :authenticate_user!, only: [:edit, :destroy]
 
 	def index
 		@articles = Article.all
+		authorize @articles
 		@cols = Article.column_names
 	end
 
 	def edit
 		@article = Article.find(params[:id])
+		authorize @article
 		@authors = Author.all
 	end
 
@@ -19,6 +22,7 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(article_params)
+		@article.user = self.current_user
 
 		if @article.save
 			redirect_to articles_path
@@ -53,6 +57,7 @@ class ArticlesController < ApplicationController
 
 	def destroy
 		@article = Article.find(params[:id])
+		authorize @article
 		@article.destroy
 		redirect_to articles_path
 	end

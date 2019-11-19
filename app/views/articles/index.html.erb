@@ -1,4 +1,4 @@
-<%if flash.present? %>
+<% if flash.present? %>
 	Errors Occured
 	<ul>
 		<p> 
@@ -19,6 +19,7 @@
 		<th>Author</th>
 		<th>Content</th>
 		<th>URL</th>
+		<th>Created By</th>
 		<th></th>
 	</tr>
 
@@ -30,6 +31,7 @@
 		<td><%= article.author.first_name %></td>
 		<td><%= article.body %></td>
 		<td><%= article.url %></td>
+		<td><%= article.user.email %></td>
 		<td>
 			<%= link_to 'Show', article_path(article) %>			
 

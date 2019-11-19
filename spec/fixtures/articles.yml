@@ -1,0 +1,11 @@
+one:
+  title: ABC
+  body: 123 Main Street
+  url: Suite 300
+  author: one
+
+two:
+  title: ABC2
+  body: 123 Main Street Second
+  url: Suite 3002
+  author: one
