@@ -4,7 +4,7 @@
   <% @users.each_with_index do |user, index| %>
       <tr>
         <td><%= index + 1 %> --> <%= user.email %>  </td>
-        <td>| <%= user.user_type %> </td>
+        <td>| <%= user.user_type %>  </td>
         <td>| <%= link_to "Show", users_show_path(user) %> </td>
         <td>| <%= link_to "Edit", edit_user_path(user) %>  </td>
         <td>| <%= link_to 'DELETE', delete_user_path(user), method: :delete, data: { confirm: "Are You sure to Delete \"#{user.first_name}\""} %></td>
