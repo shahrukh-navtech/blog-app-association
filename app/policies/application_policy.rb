@@ -37,13 +37,14 @@ class ApplicationPolicy
   class Scope
     attr_reader :user, :scope
 
-    def initialize(user, scope)
+    def initialize(user, article)
       @user = user
-      @scope = scope
+      @article = article
     end
 
     def resolve
-      scope.all
+      # binding.pry
+      @article.where(user: user)
     end
   end
 end
