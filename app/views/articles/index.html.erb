@@ -26,13 +26,9 @@
 		<td>
 			<%= link_to 'Show', article_path(article) %>			
 
-			<% if policy(article).edit? %>
-				<%= link_to 'Edit', edit_article_path(article) %>
-			<% end %>
+			<%= link_to 'Edit', edit_article_path(article) if policy(article).edit?  %>
 
-			<% if policy(article).edit? %>
-				<%= link_to 'DELETE', article_path(article), method: :delete, data: { confirm: "Are You sure to Delete \"#{article.title}\""} %> 
-			<% end %>
+			<%= link_to 'DELETE', article_path(article), method: :delete, data: { confirm: "Are You sure to Delete \"#{article.title}\""} if policy(article).edit? %> 
 			
 		</td>
 	</tr>
