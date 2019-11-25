@@ -1,14 +1,12 @@
 require 'rails_helper'
-Rails::SourceAnnotationExtractor
 
 RSpec.describe ArticlesController, type: :controller do
 	fixtures :articles
 
 	describe 'GET index' do
-		it "should list all the articles" do
-			get :index
-			binding.pry
-			expect(response).to include(Article.all)
-	 end
+		it "has a 200 status code" do
+      get :index
+      expect(response.status).to eq(200)
+    end
 	end
 end

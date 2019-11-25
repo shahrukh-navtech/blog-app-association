@@ -1,0 +1,5 @@
+one:
+  email: test2@test.com
+  first_name: nil
+  last_name: nil
+  user_type: Admin
