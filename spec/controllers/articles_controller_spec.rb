@@ -1,14 +1,14 @@
 require 'rails_helper'
+Rails::SourceAnnotationExtractor
 
 RSpec.describe ArticlesController, type: :controller do
-	fixtures :articles, :authors
+	fixtures :articles
 
-	describe '#index' do
+	describe 'GET index' do
 		it "should list all the articles" do
-			binding.pry
 			get :index
-
-
+			binding.pry
+			expect(response).to include(Article.all)
 	 end
 	end
 end
