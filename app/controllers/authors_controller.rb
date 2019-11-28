@@ -1,3 +1,4 @@
+# Authors Controller
 class AuthorsController < ApplicationController
 
 	def index

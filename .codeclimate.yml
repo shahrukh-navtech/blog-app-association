@@ -1,0 +1,22 @@
+plugins:
+  rubocop:
+    enabled: true
+    #checks:
+    #  Rubocop/Metrics/ClassLength:
+    #    enabled: false
+  brakeman:
+    enabled: true
+  rubymotion:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  structure:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby: true
+      - javascript: true
