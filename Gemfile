@@ -59,3 +59,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'rspec-rails', '~> 4.0.0.beta3', :group => [:development, :test]
 gem 'rails-controller-testing'
+gem 'bootstrap', '~> 4.3.1'
+gem 'sprockets-rails'
+gem 'jquery-rails'

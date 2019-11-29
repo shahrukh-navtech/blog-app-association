@@ -11,11 +11,24 @@
 
   <body>
     <p style="text-align: right" >
-<% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-        <br><%= link_to "Create New User | ", create_user_path if current_user.user_type == "Admin" || current_user.user_type == "Management" %><%= link_to "Show All Users", users_path if current_user.user_type == "Admin" || current_user.user_type == "Management" || current_user.user_type == "Hiring Manager" %>
+<% if user_signed_in? %><!-- 
+  Logged in as <strong><%= current_user.email %></strong>. -->
+
+<div class="container d-flex flex-row-reverse">                                     
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle"><%= current_user.email %>
+
+    <ul class="dropdown-menu">
+      <li><a href="#"><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></a></li>
+      <li><a href="#"><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></a></li>
+    </ul>
+  </div>
+<div class="container text-right" >
+  <%= link_to "Create New User | ", create_user_path if current_user.user_type == "Admin" || current_user.user_type == "Management" %><%= link_to "Show All Users", users_path if current_user.user_type == "Admin" || current_user.user_type == "Management" || current_user.user_type == "Hiring Manager" %>
+</div>
+</div>
+
+
 
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
