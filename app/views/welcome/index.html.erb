@@ -8,10 +8,6 @@
 
 <h2><%= link_to "movies (Polymorphic)", movies_path %></h2>
 
-
-<div align="center">
-	<%= image_tag("blog") %>
-<br>
 <%= link_to "Create New Blog Article", new_article_path %>
 
 <br><br>
@@ -23,5 +19,12 @@
 <%= link_to "List all the Authors", authors_path %>
 
 </div>
+<br><br><br><br>
 
+<%= form_with scope: :demo, url: demo_sql_injection_path, local: true do |form| %>
 
+<%= form.label "Enter Article ID (SQL Injection Demo)" %>
+<%= form.text_field :title %>
+
+<%= form.submit :Submit %>
+<% end %>

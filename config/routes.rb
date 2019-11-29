@@ -65,6 +65,8 @@ Rails.application.routes.draw do
 
   delete '/user/admin', to: 'users/registrations#delete_user', as: 'delete_user'
 
+  post '/user/demo/sql_injection', to: 'users#demo_sql_injection', as: 'demo_sql_injection'
+
 
   root 'welcome#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

@@ -14,4 +14,15 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
   end
+
+  def demo_sql_injection
+
+    # binding.pry
+    flash[:notice] = Article.where("url = '#{params[:demo][:title]}'")
+    redirect_to request.referrer
+
+  end
+
+
+
 end

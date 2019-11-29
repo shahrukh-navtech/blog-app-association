@@ -8,7 +8,7 @@ RSpec.describe ArticlesController, type: :controller do
 
 		it "responds in html" do
 			get :index
-			binding.pry
+			# binding.pry
 			expect(response).to render_template("index")
 			
 			expect(response.content_type).to eq "text/html; charset=utf-8"
