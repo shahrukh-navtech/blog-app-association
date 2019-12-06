@@ -1,0 +1,26 @@
+<%= form_for @article do |f| %>
+<table>
+	<tr>
+		<th align="left"><%= f.label :title %><br></th>
+		<td><%= f.text_field :title %></td>
+	</tr>
+	<tr>
+		<th align="left"><%= f.label :author %></th>
+		<td>
+			<%= f.collection_select :author_id, @authors.all, :id, :first_name %>
+		</td>
+	</tr>
+
+	<tr>
+		<th align="left"><%= f.label :body %></th>
+		<td><%= f.text_area :body %></td>
+	</tr>
+
+	<tr>
+		<th align="left"><%= f.label :url %></th>
+		<td><%= f.text_field :url %></td>
+	</tr>
+
+  <%= f.submit %>
+
+  <% end %>

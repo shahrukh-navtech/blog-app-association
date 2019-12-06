@@ -1,41 +1,21 @@
-<div align="center">
+<div class="row">
+  <div class="col-6">
+    EDIT Article
+  </div>
+<div class="row">
+  <div class="col-6">
+    <%= render partial: "form" %>
+  </div>
+</div>
 
-<h1>EDIT Article</h1>
+<div class="row">
+  <div class="col-6">
+    <%= link_to 'Show all Articles', articles_path %>
+  </div>
+</div>
 
-<%= form_with model: @article, local: true do |form| %>
-
-<table>
-	<tr>
-		<th align="left"><%= form.label :title %><br></th>
-		<td><%= form.text_field :title %></td>
-	</tr>
-
-	<tr>
-		<th align="left"><%= form.label :author %></th>
-		<td>
-			<%= form.collection_select :author, @authors.all, :id, :first_name, {:selected => @article.author.id } %>
-		</td>
-	</tr>
-
-	<tr>
-		<th align="left"><%= form.label :body %></th>
-		<td><%= form.text_area :body %></td>
-	</tr>
-
-	<tr>
-		<th align="left"><%= form.label :url %></th>
-		<td><%= form.text_field :url %></td>
-	</tr>
-
-
-</table> 
-<%= form.submit :Submit %>
-
-<% end %>
-
-<br>
-<%= link_to 'Show all Articles', articles_path %>
-<br><br>
-<%= link_to 'Back to Home', root_path %>
-
+<div class="row">
+  <div class="col-6">
+    <%= link_to 'Back to Home', root_path %>
+  </div>
 </div>

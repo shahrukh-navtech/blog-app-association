@@ -13,34 +13,7 @@
 
 <h1>New Post to the Blog</h1>
 
-<%= form_with scope: :articles, url: articles_path, local: true do |form| %>
-
-<table>
-	<tr>
-		<th align="left"><%= form.label :title %><br></th>
-		<td><%= form.text_field :title %></td>
-	</tr>
-
-	<tr>
-		<th align="left"><%= form.label :author %></th>
-		<td>
-			<%= form.collection_select :author_id, @authors.all, :id, :first_name %>
-		</td>
-	</tr>
-
-	<tr>
-		<th align="left"><%= form.label :body %></th>
-		<td><%= form.text_area :body %></td>
-	</tr>
-
-	<tr>
-		<th align="left"><%= form.label :url %></th>
-		<td><%= form.text_field :url %></td>
-	</tr>
-
-</table> 
-<%= form.submit :Submit %>
-<% end %>
+<%= render partial: "form" %>
 
 <br>
 <%= link_to 'Show all Articles', articles_path %>

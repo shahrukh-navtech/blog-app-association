@@ -36,12 +36,13 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find_by(id: params[:id])
-    @author = Author.find_by(id: params[:article][:author])
-    @article.title = params[:article][:title]
-    @article.author = @author
-    @article.body = params[:article][:body]
-    url_test(@article)
-    @article.save
+    # @author = Author.find_by(id: params[:article][:author])
+    # @article.title = params[:article][:title]
+    # @article.author = @author
+    # @article.body = params[:article][:body]
+    # url_test(@article)
+    # @article.save!
+    @article.update(article_params)
     redirect_to articles_path
   end
 
@@ -67,6 +68,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:articles).permit(:title, :author_id, :body, :url)
+    params.require(:article).permit(:title, :author_id, :body, :url)
   end
 end

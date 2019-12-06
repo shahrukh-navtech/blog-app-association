@@ -1,17 +1,26 @@
-<table border = 1px>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Email</th>
-    <th>User Type</th>
-  </tr>
-  <tr>
-    <td><%= @user.first_name %></td>
-    <td><%= @user.last_name %></td>
-    <td><%= @user.email %></td>
-    <td><%= @user.user_type %></td>
-  </tr>
+<div class="container">
+  <div class="container" style="text-align: center">
+    <h2>User Detail</h2>
+  </div>
+  <table class="table table-hover table-bordered">
+    <thead class="thead-dark">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>User Type</th>
+    </tr>
+    </thead>
+    <tr>
+      <td><%= @user.first_name %></td>
+      <td><%= @user.last_name %></td>
+      <td><%= @user.email %></td>
+      <td><%= @user.user_type %></td>
+    </tr>
 
-</table>
-asdf
-<%= link_to "Back", :back %>
+  </table>
+  <div class="container" style="text-align: center">
+    <%= link_to "Back", :back %>
+  </div>
+
+</div>

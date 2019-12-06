@@ -1,51 +1,50 @@
-
-
-<div align="center">
-
-<h1>All Articles</h1>
 <div class="container">
-<table  class="table table-hover">
+  <div class="container" style="text-align: center">
+    <h1>All Articles</h1>
+  </div>
+  <table class="table table-hover table-bordered">
+    <caption>All Articles</caption>
+    <thead class="thead-dark">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Content</th>
+      <th>URL</th>
+      <th>Created By</th>
+      <th></th>
+    </tr>
+    </thead>
+    <% @articles.each do |article| %>
 
-	<tr>
-		<th>Title</th>
-		<th>Author</th>
-		<th>Content</th>
-		<th>URL</th>
-		<th>Created By</th>
-		<th></th>
-	</tr>
+      <tr class="success">
 
-	<% @articles.each do |article| %>
+        <td><%= article.title %></td>
+        <td><%= article.author.first_name %></td>
+        <td><%= article.body %></td>
+        <td><%= article.url %></td>
+        <td><%= article.user.email %></td>
+        <td>
+          <%= link_to '<button type="button" class="btn btn-primary">Show</button>'.html_safe, article_path(article) %>
 
-	<tr class="success">
+          <% if policy(article).edit? %>
+            <%= link_to '<button type="button" class="btn btn-primary">Edit</button>'.html_safe, edit_article_path(article) %>
+          <% end %>
 
-		<td><%= article.title %></td>
-		<td><%= article.author.first_name %></td>
-		<td><%= article.body %></td>
-		<td><%= article.url %></td>
-		<td><%= article.user.email %></td>
-		<td>
-			<%= link_to '<button type="button" class="btn btn-primary">Show</button>'.html_safe, article_path(article) %>		
+          <% if policy(article).edit? %>
+            <%= link_to '<button type="button" class="btn btn-primary">Delete</button>'.html_safe, article_path(article), method: :delete, data: {confirm: "Are You sure to Delete \"#{article.title}\""} %> </button>
+          <% end %>
 
-			<% if policy(article).edit? %>
-				<%= link_to '<button type="button" class="btn btn-primary">Edit</button>'.html_safe, edit_article_path(article) %></button>
-			<% end %>
+        </td>
+      </tr>
 
-			<% if policy(article).edit? %>
-				<%= link_to '<button type="button" class="btn btn-primary">Delete</button>'.html_safe, article_path(article), method: :delete, data: { confirm: "Are You sure to Delete \"#{article.title}\""} %> </button>		
-			<% end %>
-			
-		</td>
-	</tr>
+    <% end %>
+  </table>
 
-	<% end %>
-</table>
 
-</div> 
-
-<br>
-
-<%= link_to "Create New Blog Article", new_article_path %>
-<br><br>
-<%= link_to '<button type="button" class="btn btn-primary btn-lg">Back to Home</button>'.html_safe, root_path %>
+  <br>
+  <div class="container" style="text-align: center">
+    <%= link_to "Create New Blog Article", new_article_path %>
+    <br><br>
+    <%= link_to '<button type="button" class="btn btn-primary btn-lg">Back to Home</button>'.html_safe, root_path %>
+  </div>
 </div>

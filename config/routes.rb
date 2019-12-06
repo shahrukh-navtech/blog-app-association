@@ -68,6 +68,6 @@ Rails.application.routes.draw do
   post '/user/demo/sql_injection', to: 'users#demo_sql_injection', as: 'demo_sql_injection'
 
 
-  root 'welcome#index'
+  root 'articles#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

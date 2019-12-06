@@ -1,47 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Blog</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <p style="text-align: right" >
-<% if user_signed_in? %><!-- 
-  Logged in as <strong><%= current_user.email %></strong>. -->
+<body>
 
-<div class="container d-flex flex-row-reverse">                                     
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle"><%= current_user.email %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><%= link_to '<img src="/assets/images/app-icon.png" width="50" height="40"
+  style="border-radius: 50%;">'.html_safe, root_path, :class => 'nav-link' %></a>
+  <button class="navbar-toggler"
+          type="button" data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
 
-    <ul class="dropdown-menu">
-      <li><a href="#"><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></a></li>
-      <li><a href="#"><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></a></li>
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to "Home", root_path, :class => 'nav-link' %> <span class="sr-only">(current)</span>
+      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <label class="nav-link">
+            <%= link_to "Create New User", create_user_path if %w(Admin Management).include?(current_user.user_type) %>
+          </label>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">|</a>
+        </li>
+        <li class="nav-item">
+          <label class="nav-link">
+            <%= link_to "Show All Users", users_path if %w(Admin Management Hiring\ Manager).include?(current_user.user_type) %>
+          </label>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+             href="#" id="navbarDropdownMenuLink"
+             data-toggle="dropdown"
+             aria-haspopup="true"
+             aria-expanded="false">
+            <%= current_user.email %>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'dropdown-item' %>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'dropdown-item' %>
+          </div>
+        </li>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link' %> |
+        <%= link_to "Login", new_user_session_path, :class => 'nav-link' %>
+      <% end %>
     </ul>
   </div>
-<div class="container text-right" >
-  <%= link_to "Create New User | ", create_user_path if current_user.user_type == "Admin" || current_user.user_type == "Management" %><%= link_to "Show All Users", users_path if current_user.user_type == "Admin" || current_user.user_type == "Management" || current_user.user_type == "Hiring Manager" %>
-</div>
-</div>
+</nav>
 
-
-
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>
-</p>
-  <% if notice %>
+<% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
 <% if alert %>
-  Error Occured: 
+  Error Occured:
   <p style="color: red" class="alert alert-danger"><%= alert %></p>
 <% end %>
-    <%= yield %>
-  </body>
+
+
+<%= yield %>
+
+
+<br>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="text-left" style="display: inline">
+    About us: A Simple Blog App
+  </div>
+  <div class="float-right" style="display: inline">
+    Contact us: blogApp<br>Ph: 9999999999
+  </div>
+  <div class="container text-center">
+    <small>Copyright &copy; blogApp</small>
+  </div>
+</footer>
+
+</body>
 </html>
