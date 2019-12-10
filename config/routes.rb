@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  
+  mount Flipflop::Engine => "/flipflop"
+
+  
   devise_for :users, controllers: { registrations: "users/registrations"}
 
   devise_scope :user do 
@@ -10,6 +15,15 @@ Rails.application.routes.draw do
     delete "/user/admin" => "users/registrations#delete_user"
 
   end 
+
+  # scope '/api' do
+  #   resources :groups, except: [:new, :edit]
+  #   resources :articles
+  # end
+
+  mount Flipper::UI.app(Flipper) => '/flipper'
+
+
 
 
   get 'subscriptions/index'
@@ -66,6 +80,7 @@ Rails.application.routes.draw do
   delete '/user/admin', to: 'users/registrations#delete_user', as: 'delete_user'
 
   post '/user/demo/sql_injection', to: 'users#demo_sql_injection', as: 'demo_sql_injection'
+
 
 
   root 'articles#index'

@@ -1,4 +1,8 @@
 Rails.application.configure do
+  # Before filter for Flipflop dashboard. Replace with a lambda or method name
+  # defined in ApplicationController to implement access control.
+  config.flipflop.dashboard_access_filter = nil
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -60,7 +64,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 4000 }
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true

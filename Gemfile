@@ -62,3 +62,9 @@ gem 'rails-controller-testing'
 gem 'bootstrap', '~> 4.3.1'
 gem 'sassc'
 
+
+gem 'flipper'
+gem 'flipper-ui'
+
+gem "flipflop"
+
