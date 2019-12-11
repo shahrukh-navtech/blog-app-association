@@ -48,6 +48,11 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    if !FlipFlop.articles?
+      flash[:error] = "Articles Disabled"
+      redirect_to articles_path
+
+    end
   # rescue StandardError => e
   rescue ActiveRecord::RecordNotFound
     flash[:error] = "Record Not found on id : #{params[:id]}"

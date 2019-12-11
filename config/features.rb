@@ -26,4 +26,8 @@ Flipflop.configure do
   feature :articles,
       default: true,
       description: "Enable All the articles"
+
+  feature :show_hide_signup,
+      default: true,
+      description: "Enable/Disable Signup Link"
 end
