@@ -68,3 +68,5 @@ gem 'flipper-ui'
 
 gem "flipflop"
 
+
+gem "rack-cors"

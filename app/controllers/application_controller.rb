@@ -5,6 +5,11 @@ class ApplicationController < ActionController::Base
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+
+  def status
+    render json: { data: 'ok' }
+  end
+
   private
 
   def user_not_authorized

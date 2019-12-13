@@ -4,7 +4,8 @@ module Blogapp
       class ArticlesWriter
 
         def all
-          return Article.all
+          @articles = Article.all
+          return @articles
         end
 
         def single(resource)
