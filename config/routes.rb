@@ -52,7 +52,6 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       #post 'articles', to: 'articles#showcols'
-
       resources :articles do
         resources :author
       end
@@ -85,11 +84,6 @@ Rails.application.routes.draw do
 
   root 'articles#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  #
-  #
-  #
-  #
-  # API
-  #
+
   get 'api/status', controller: 'application', action: 'status'
 end

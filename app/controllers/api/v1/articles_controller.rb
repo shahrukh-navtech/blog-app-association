@@ -18,8 +18,21 @@ module Api
 
       def update
 
-        binding.pry
+        # binding.pry
 
+        @article = Article.find_by(id: params[:id])
+        if @article.update(article_params)
+          render status: 200, json: '{"status" : "Updated"}'
+        else
+          render status: 403, json: '{"status" : "ERROR"}'
+        end
+      end
+
+
+      private
+
+      def article_params
+        params.require(:article).permit(:title, :author_id, :body, :url)
       end
 
     end
