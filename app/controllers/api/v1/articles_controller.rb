@@ -17,9 +17,6 @@ module Api
       end
 
       def update
-
-        # binding.pry
-
         @article = Article.find_by(id: params[:id])
         if @article.update(article_params)
           render status: 200, json: '{"status" : "Updated"}'
@@ -27,6 +24,17 @@ module Api
           render status: 403, json: '{"status" : "ERROR"}'
         end
       end
+
+      def destroy
+        @article = Article.find_by(id: params[:id])
+        if @article.destroy
+          render status: 200, json: '{"status" : "Destroyed Successfully"}'
+        else
+          render status: 403, json: '{"status" : "ERROR"}'
+        end
+      end
+
+
 
 
       private
