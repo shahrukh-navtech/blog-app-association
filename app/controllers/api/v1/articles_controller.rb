@@ -1,14 +1,24 @@
 module Api
   module V1
     class ArticlesController < ApplicationController
+      skip_before_action :verify_authenticity_token
 
       def index
-        render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.all(), include: ['user','author']
+        render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.all(), include: ['user']
       end
 
       def create
-        @cols = params[:article]
-        render status: 200, json: JSON.pretty_generate(JSON.parse(Blogapp::Writers::Articles::ArticlesWriter.new.single_col(@cols).to_json))
+        # binding.pry
+        # @cols = params[:article]
+        # puts Blogapp::Writers::Articles::ArticlesWriter.new.create(article_params)
+        if Blogapp::Writers::Articles::ArticlesWriter.new.create(article_params)
+          render status: 200, json: '{"status" : "Updated"}'
+        else
+          render status: 403, json: '{"status" : "ERROR"}'
+        end
+
+        rescue ActionController::ParameterMissing
+          render status: 403, json: '{"status" : "Enter Something"}'
       end
 
       def show
@@ -17,6 +27,7 @@ module Api
       end
 
       def update
+        binding.pry
         @article = Article.find_by(id: params[:id])
         if @article.update(article_params)
           render status: 200, json: '{"status" : "Updated"}'
@@ -34,13 +45,10 @@ module Api
         end
       end
 
-
-
-
       private
 
       def article_params
-        params.require(:article).permit(:title, :author_id, :body, :url)
+        params.require(:article).permit(:title, :body, :url)
       end
 
     end
