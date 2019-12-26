@@ -22,8 +22,9 @@ module Api
       end
 
       def show
+        # binding.pry
         @id = params[:id]
-        render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.single(@id), include: ['user','author']
+        render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.single(@id), include: ['user']
       end
 
       def update
