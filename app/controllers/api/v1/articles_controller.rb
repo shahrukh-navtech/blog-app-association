@@ -8,9 +8,6 @@ module Api
       end
 
       def create
-        # binding.pry
-        # @cols = params[:article]
-        # puts Blogapp::Writers::Articles::ArticlesWriter.new.create(article_params)
         if Blogapp::Writers::Articles::ArticlesWriter.new.create(article_params)
           render status: 200, json: '{"status" : "Updated"}'
         else
@@ -22,13 +19,11 @@ module Api
       end
 
       def show
-        # binding.pry
         @id = params[:id]
         render status: 200, json: Blogapp::Writers::Articles::ArticlesWriter.new.single(@id), include: ['user']
       end
 
       def update
-        binding.pry
         @article = Article.find_by(id: params[:id])
         if @article.update(article_params)
           render status: 200, json: '{"status" : "Updated"}'
