@@ -13,10 +13,9 @@ module Blogapp
         end
 
         def create(resource)
-          # binding.pry
           puts resource
           @article = Article.new(resource)
-          @article.user = User.find(13)
+          # @article.user = User.find(13)
           if @article.save
             return true
           else
