@@ -1,6 +1,6 @@
 # README
 
-<h1>Command to use</h1>
+<h1>TestCommand to use</h1>
 <h2>yarn install --check-files</h2>
 <h2>rails db:create</h2>
 <h2>rails db:migrate</h2>
